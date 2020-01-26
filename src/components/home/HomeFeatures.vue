@@ -54,7 +54,7 @@
       </Feature>
     </div>
 
-    <div class="grid-cols container container-md grid-cols--2">
+    <div class="grid-cols grid-cols--gap-large grid-cols--full-md">
       <FeatureCard link="/docs">
         <h3>📝Documentation</h3>
         <p>Everything you need to get up and running.</p>
