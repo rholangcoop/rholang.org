@@ -20,7 +20,7 @@ This is the repository of the website [https://rholang.github.io/](https://rhola
 
 - Deploy to Github (gh-pages)
 
-  - your github repository needs to branches: source and master
+  - your github repository needs two branches: source and master
   - \$ yarn deploy
 
 ## Folder structure
