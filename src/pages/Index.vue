@@ -47,7 +47,7 @@ export default {
   },
 
   metaInfo: {
-    title: "Documentation page for Rchain"
+    title: "Documentation page for Rchain 🌟"
   }
 };
 </script>

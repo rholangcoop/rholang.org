@@ -49,6 +49,7 @@ export default {
         docsearch({
           indexName: "rholang-docs",
           inputSelector: `#${this.id}-input`,
+          appId: "NSSP00E9NN",
           apiKey: "865b2e3bf9dc5bc41e5456eb49b9a471",
           debug: process.env.NODE_ENV === "development"
         });
