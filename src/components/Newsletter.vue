@@ -4,7 +4,7 @@
       <strong>👋 Stay in the loop.</strong> Subscribe to Rchain newsletter!
     </p>
     <form
-      action
+      action="."
       method="post"
       id="mc-embedded-subscribe-form"
       name="mc-embedded-subscribe-form"
