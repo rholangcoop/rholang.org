@@ -4,21 +4,25 @@
       <h2>Latest from Rholang blog</h2>
     </div>
     <div class="blog-posts container container-md">
-      <PostCard v-for="edge in $static.posts.edges" :key="edge.node.id" :post="edge.node" />
+      <PostCard v-for="edge in $static.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
+    <div class="container container-md mb">
+      <Newsletter />
+    </div>
+
   </Section>
 </template>
 
 <script>
-import PostCard from "@/components/PostCard.vue";
-import Newsletter from "~/components/Newsletter";
+import PostCard from '@/components/PostCard.vue'
+import Newsletter from '~/components/Newsletter'
 
 export default {
   components: {
     PostCard,
     Newsletter
   }
-};
+}
 </script>
 
 <static-query>
