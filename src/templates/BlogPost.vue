@@ -17,7 +17,7 @@
 
       </div>
 
-      <Newsletter />
+   
     </Section>
   </Layout>
 </template>
