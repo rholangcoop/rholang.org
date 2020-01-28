@@ -8,11 +8,7 @@
           modern dApps.
         </p>
       </div>
-      <PostCard
-        v-for="edge in $page.posts.edges"
-        :key="edge.node.id"
-        :post="edge.node"
-      />
+      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
     </Section>
   </Layout>
 </template>
@@ -29,7 +25,6 @@ query {
         timeToRead
         author {
           title
-          path
           avatar (width: 60)
         }
         excerpt
