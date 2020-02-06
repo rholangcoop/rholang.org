@@ -6,12 +6,14 @@
         alt="Rholang.org"
         src="~/assets/images/rholang-logo.png"
         width="200px"
+        immediate="true"
       />
       <g-image
         class="logo__svg show-for-small logo__svg--small"
         alt="Rholang.org"
         src="~/assets/images/rholang-logo-small.png"
         width="200px"
+        immediate="true"
       />
     </g-link>
   </div>
@@ -20,25 +22,20 @@
 <script>
 export default {
   components: {},
-  methods: {
-    rightClick() {
-      this.$router.push({ path: "/logo" });
-      return false;
-    }
-  }
+  methods: {}
 };
 </script>
 
 <style lang="scss">
 .logo {
   &__svg {
-    max-width: 100px;
-    max-height: 60px;
+    width: 100px;
+    height: 27px;
     margin-top: 20px;
     &--small {
       margin-top: 30px;
-      max-width: 40px;
-      max-height: 45px;
+      width: 40px;
+      height: 38px;
     }
   }
 }
