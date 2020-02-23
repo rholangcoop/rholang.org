@@ -11,7 +11,7 @@
     - title: Running RNode (Docker)
       link: /docs/running-rnode-docker/
 
-- title : RNode
+- title: RNode
   items:
     - title: Commands for RNode
       link: /docs/commands/
@@ -21,8 +21,8 @@
       link: /docs/propose-block/
     - title: Check block finalization
       link: /docs/block-finalization/
-      
-- title : Rholang
+
+- title: Rholang
   items:
     - title: Rholang
       link: /docs/rholang/
@@ -39,18 +39,27 @@
     - title: Design patterns
       link: /docs/design-patterns/
 
-- title : Validator
+- title: Validator
   items:
     - title: What are Validators
       link: /docs/bonding-network/
 
-- title : Research
+- title: Shards
   items:
+    - title: Sharding Proposal
+      link: /docs/sharding-proposal/
+    - title: Sharding Definitions
+      link: /docs/sharding-definitions/
+    - title: Sharding Localized Processes
+      link: /docs/sharding-localized/
+    - title: Powerset Shards
+      link: /docs/powerset-shards/
+
+- title: Research
+  items:
+    - title: History Blockchain
+      link: /docs/history-blockchain/
     - title: Research
       link: /docs/research/
     - title: Current state of the protocol
       link: /docs/cbc-protocol/
-
-
-
-

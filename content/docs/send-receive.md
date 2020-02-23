@@ -2,11 +2,9 @@
 
 Sending and receiving is one of the most important things to understand in Rholang.
 
-> Because Rholang is an asynchronous programming langugage, there is no return in a function. That's why you call a function HelloWorld(args) via sending on the functions name HelloWorld. You are sending via the ! syntax.
+> Because Rholang is an asynchronous programming langugage, there is no return in a function.That's why you call a function `HelloWorld(args)` via sending on the `functions` name HelloWorld. You are sending via the ! syntax.
 
-> Note
->
-> Because of the asynchrony you don't know when the function you called via HelloWorld!(args) is sending the processed data back over some other channel, Rholang has the for(args<-channels) syntax for waiting until all the needed arguments are received over the channels.
+> Because of the asynchrony you don't know when the `function` you called via HelloWorld!(args) is sending the processed data **back** over some other channel. Thats why there is no `return` in the `function`. Instead Rholang has the for(args<-channels) syntax for waiting until all the needed arguments are received over the channels.
 
 ## Example
 
@@ -27,8 +25,6 @@ new HelloWorld, stdout(`rho:io:stdout`) in {
 
 4. Rholang runtime environments may choose to include built-in processes listening on channels. In this tutorial, we use new with the urn `rho:io:stdout` to request a channel where sent messages get printed to a console.
 
-> Note
->
 > When you send data over a channel and there is no contract which is listening with for(args<-channels) for that channel, then these data is stored in the tuplespace (like a database), until some contract is starting to listening for it.
 
 ### Name Equivalence

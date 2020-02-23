@@ -68,6 +68,12 @@
               target="_blank"
             >Rchain Toolkit</a>
             <a
+              href="https://github.com/arvinxx/my-rchain-wallet"
+              rel="noopener noreferrer"
+              target="_blank"
+            >MyRchainWallet</a>
+
+            <a
               href="https://github.com/rholang/rholang.github.io"
               rel="noopener noreferrer"
               target="_blank"

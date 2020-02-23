@@ -1,15 +1,25 @@
 # Running RNode (Docker)
 
-These are the run commands to start RNode (Docker)
+These are the run commands to start RNode (Docker) and connect to an existing network.
 
-## To connect to an existing network
+## Docker for Windows 10 and Linux
+
+> Please fill in the `<bootstrap ID>`. The current network ID is posted on [RChain public testnet information](https://rchain.atlassian.net/wiki/spaces/CORE/pages/678756429/RChain+public+testnet+information). The `<network>` is `optional`. You can fill in the name of the network you want to run on (testnet, betanet3).
 
 ```bash
-docker run -it --rm --network rnode-net --name rnode1 -v $HOME/var/rnode1:/var/lib/rnode rchain/rnode:latest run  --bootstrap "<bootstrap node address>" --map-size 1099511627776
+docker run -it --rm --name rnode -v /data/rhoc-daemon-01:/var/lib/rnode rchain/rnode:latest run --bootstrap <bootstrap ID> --network <network>
 ```
 
-> 
->
+**Example:**
+
+```bash
+docker run -it --rm --name rnode -v /data/rhoc-daemon-01:/var/lib/rnode rchain/rnode:latest run --bootstrap "rnode://25a48e34b10c5917aa21bdbbf45da56d3e7129c6@node0.testnet.rchain-dev.tk?protocol=40400&discovery=40404" --network betanet3
+```
+
+> if the message: `- Waiting for first connection` is there for more than 1 minute, please check your ports and ip: [Network Configuration](../network-configuration)
+
+## Docker for Mac
+
 > Docker for Mac will only work with static NAT and port forwarding. network=host does not work on Mac. See RNode supported network configuration for more information on static NAT and port forwarding.
 
 - Bootstrap address - Enter the address of the bootstrap node you want to connect with. See RNode bootstrap addresses for bootstrap nodes supported by the RChain core development team.
