@@ -6,7 +6,9 @@ We deliver RNode software in a variety of installation packages. Installation pa
 
 > Should there be errors, when you install RNode for the first time, please make shure that you have the newest Java version installed.
 
-## Install JDK (Java)
+## Linux
+
+#### Install JDK (Java)
 
 ```sh
 sudo apt-get update
@@ -16,7 +18,7 @@ sudo apt-get update
 sudo apt-get install -y openjdk-11-jdk
 ```
 
-## Linux
+#### Install RNode
 
 <div style='overflow-x:auto'>
 <table class="tg">
