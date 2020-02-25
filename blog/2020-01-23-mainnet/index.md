@@ -1,19 +1,17 @@
 ---
-title: RCHAIN MAINNET ANNOUNCEMENT - THE BLOCK HEIGHT
+title: RCHAIN MAINNET ANNOUNCEMENT
 slug: rchain-announcement
 author: [rchain stuff]
 date: 2020-02-25
 tags: ["rchain announcement", "mainnet"]
-excerpt: "RChain is going live on February 25, 2020. Be prepared for mainnet 🌟🎉"
+excerpt: "RChain Mainnetis live 🌟🎉"
 ---
 
 ## RCHAIN MAINNET ANNOUNCEMENT: THE BLOCK HEIGHT
 
 ![mainnet](./images/concert.jpg)
 
-RChain is going live on February 25, 2020. Initially, the Cooperative will run all the nodes in the root shard but expects that to change in the upcoming months. The Cooperative will take a snapshot of the Ethereum chain at block height `9371743`, which should occur on the morning of January 28, 2020 and publish the balances going into the genesis block. The community will have four days to review the genesis block balances, after which the genesis ceremony will be conducted on February 4, 2020.
-
-As mentioned before, those wishing to have access to REV on the RChain network should make sure that their RHOCs are in an address for which they control the private key.
+RChain Mainnet is live. Initially, the Cooperative will run all the nodes in the root shard but expects that to change in the upcoming months. The Cooperative will took a snapshot of the Ethereum chain at block height `9371743`, which occur on the morning of January 28, 2020 and published the balances going into the genesis block. The community will had four days to review the genesis block balances.
 
 RChain uses a pure proof-of-stake version of the correct-by-construction (CBC) Casper consensus framework.
 
