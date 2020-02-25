@@ -11,7 +11,7 @@ excerpt: "RChain Mainnet is live 🌟🎉"
 
 ![mainnet](./images/concert.jpg)
 
-RChain Mainnet is live. Initially, the Cooperative will run all the nodes in the root shard but expects that to change in the upcoming months. The Cooperative will took a snapshot of the Ethereum chain at block height `9371743`, which occur on the morning of January 28, 2020 and published the balances going into the genesis block. The community will had four days to review the genesis block balances.
+RChain Mainnet is live. Initially, the Cooperative will run all the nodes in the root shard but expects that to change in the upcoming months. The Cooperative will took a snapshot of the Ethereum chain at block height `9371743`, which occur on the morning of January 28, 2020 and published the balances going into the genesis block. The community had four days to review the genesis block balances.
 
 RChain uses a pure proof-of-stake version of the correct-by-construction (CBC) Casper consensus framework.
 
