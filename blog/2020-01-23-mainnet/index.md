@@ -4,7 +4,7 @@ slug: rchain-announcement
 author: [rchain stuff]
 date: 2020-02-25
 tags: ["rchain announcement", "mainnet"]
-excerpt: "RChain Mainnetis live 🌟🎉"
+excerpt: "RChain Mainnet is live 🌟🎉"
 ---
 
 ## RCHAIN MAINNET ANNOUNCEMENT: THE BLOCK HEIGHT
