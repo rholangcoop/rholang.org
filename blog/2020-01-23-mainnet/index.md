@@ -2,9 +2,9 @@
 title: RCHAIN MAINNET ANNOUNCEMENT - THE BLOCK HEIGHT
 slug: rchain-announcement
 author: [rchain stuff]
-date: 2020-02-15
+date: 2020-02-25
 tags: ["rchain announcement", "mainnet"]
-excerpt: "RChain is going live on February 4, 2020. Be prepared for mainnet 🌟🎉"
+excerpt: "RChain is going live on February 25, 2020. Be prepared for mainnet 🌟🎉"
 ---
 
 ## RCHAIN MAINNET ANNOUNCEMENT: THE BLOCK HEIGHT
