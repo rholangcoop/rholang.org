@@ -31,6 +31,15 @@ Example:
 
 > Please make shure that the --phlo-limit is not to low. Additionally put the right `<valid-after-block>` in (look it up with the command ./rnode show-blocks).
 
+## Storage Cost
+
+The current cost for file store on the Rchain Mainnet is the following:
+
+0,00004899 REV / KB cost
+Which means you could deploy 20,4 MB with one REV.
+
+The cost is measured in 10E-9 REV (10 nanoREV).
+
 ## Deploy a Rholang contract to a known validator in Docker
 
 ```bash

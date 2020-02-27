@@ -41,6 +41,8 @@
 
 - title: Validator
   items:
+    - title: Current state of the protocol
+      link: /docs/cbc-protocol/
     - title: What are Validators
       link: /docs/bonding-network/
     - title: Run a Standalone Validator
@@ -63,5 +65,3 @@
       link: /docs/history-blockchain/
     - title: Research
       link: /docs/research/
-    - title: Current state of the protocol
-      link: /docs/cbc-protocol/

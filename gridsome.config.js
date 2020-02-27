@@ -107,7 +107,15 @@ module.exports = {
           author: "Contributor"
         },
         remark: {
-          plugins: ["@gridsome/remark-prismjs"]
+          plugins: [
+            "@gridsome/remark-prismjs",
+            [
+              "@noxify/gridsome-plugin-remark-embed",
+              {
+                enabledProviders: ["Soundcloud"]
+              }
+            ]
+          ]
         }
       }
     }

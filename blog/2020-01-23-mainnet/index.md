@@ -9,6 +9,8 @@ excerpt: "RChain Mainnet is live 🌟🎉"
 
 ## RCHAIN MAINNET ANNOUNCEMENT
 
+https://soundcloud.com/rchain-cooperative/rcast-44-fairness-liveness-rchain
+
 ![mainnet](./images/concert.jpg)
 
 RChain Mainnet is live. Initially, the Cooperative will run all the nodes in the root shard but expects that to change in the upcoming months. The Cooperative took a snapshot of the Ethereum chain at block height `9371743`, which occur on the morning of January 28, 2020 and published the balances going into the genesis block. The community to reviewed the genesis block balances.
