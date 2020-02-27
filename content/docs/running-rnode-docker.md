@@ -4,7 +4,7 @@ These are the run commands to start an RNode Observer Node (read-only node). Wit
 
 ## Docker for Windows 10 and Linux
 
-> Please fill in the `<bootstrap ID>`. The current network ID is posted on [RChain public testnet information](https://rchain.atlassian.net/wiki/spaces/CORE/pages/678756429/RChain+public+testnet+information). The `<network>` is `optional`. You can fill in the name of the network you want to run on (testnet, betanet3).
+> Please fill in the `<bootstrap ID>`. The current network ID is posted on [RChain public testnet information](https://rchain.atlassian.net/wiki/spaces/CORE/pages/678756429/RChain+public+testnet+information).
 
 ```bash
 docker run -it --rm --name rnode -v /data/rhoc-daemon-01:/var/lib/rnode rchain/rnode:latest run --network <args> --shard-id <args> --bootstrap <args> -finalization-rate <args> --fault-tolerance-threshold <args> --synchrony-constraint-threshold <args> --fork-choice-stale-threshold <args> --fork-choice-check-if-stale-interval <args> --drop-peer-after-retries <args> --give-up-after-skipped <args>

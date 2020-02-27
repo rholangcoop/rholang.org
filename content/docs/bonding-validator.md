@@ -5,7 +5,8 @@ The information on this page is for people who will help launch and validate on 
 ## Requirements
 
 CPU: 4-8 Cores
-Memory: 8-16 GB
+
+Memory: 16-32 GB
 
 ## Setup
 
