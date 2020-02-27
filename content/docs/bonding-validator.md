@@ -11,7 +11,7 @@ Memory: 8-16 GB
 
 This is the setup for non-docker rnode, but rnode for docker (windows) works equivalent:
 
-Remove cache (do this always, when you with the network)
+Remove cache (do this always, when you switch the network)
 
 ```bash
 rm -Rf ~/.rnode/
