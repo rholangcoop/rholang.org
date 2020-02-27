@@ -14,7 +14,7 @@ The deploy command requires the following specifications in addition to the Rhol
   integer.
 - `--private-key-path <arg>` The deployer's file with encrypted
   private key.
-- `--valid-after-block-number` At what block height your code will be active.
+- `--valid-after-block-number <arg>` At what block height your code will be active.
   Look this up with the command: `./rnode show-blocks`
   Deploy a Rholang contract to a known validator
   Unless you are a validator in the RChain network or a private network, you will typically deploy Rholang to a known validator with the intent to add the contract to the blockchain.
