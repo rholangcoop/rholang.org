@@ -112,7 +112,7 @@ module.exports = {
             [
               "@noxify/gridsome-plugin-remark-embed",
               {
-                enabledProviders: ["Soundcloud"]
+                enabledProviders: ["Soundcloud", "Youtube"]
               }
             ]
           ]
