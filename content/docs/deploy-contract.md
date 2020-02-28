@@ -36,6 +36,7 @@ Example:
 The current cost for file store on the Rchain Mainnet is the following:
 
 0,00004899 REV / KB cost
+
 Which means you could deploy 20,4 MB with one REV.
 
 The cost is measured in 10E-9 REV (10 nanoREV).
