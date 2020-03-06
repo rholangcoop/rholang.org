@@ -54,7 +54,7 @@
             <Bullet />asynchronous notification for names in a contract
           </li>
           <li>
-            <Bullet />scalable DAG structure (Directed Asynchronous Graphs)
+            <Bullet />scalable DAG structure (Directed Acyclic Graph)
           </li>
         </ul>
       </Card>
