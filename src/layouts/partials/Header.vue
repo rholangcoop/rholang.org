@@ -72,6 +72,16 @@
               rel="noopener noreferrer"
               target="_blank"
             >MyRchainWallet</a>
+            <a
+              href="https://github.com/imphila/Capo"
+              rel="noopener noreferrer"
+              target="_blank"
+            >Capo Mobile App</a>
+            <a
+              href="https://github.com/dimworm/rui"
+              rel="noopener noreferrer"
+              target="_blank"
+            >Rui锐 Chrome Wallet</a>
 
             <a
               href="https://github.com/rholang/rholang.github.io"

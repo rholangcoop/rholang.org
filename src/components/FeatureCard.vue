@@ -1,5 +1,5 @@
 <template>
-  <Card class="blog-posts__post" :link="link">
+  <Card class="feature-posts__post" :link="link">
     <slot />
   </Card>
 </template>
@@ -16,13 +16,10 @@ export default {
 </script>
 
 <style lang="scss">
-.blog-posts {
+.feature-posts {
   &__post {
     position: relative;
-    margin-bottom: 2rem;
-    .card__inner {
-      padding: var(--space-x2);
-    }
+    margin-bottom: 0rem;
   }
 }
 </style>

@@ -1,13 +1,13 @@
 <template>
   <Card class="blog-posts__post" :link="post.path">
-    <h3 v-html="post.title"/>
-    <p v-html="post.excerpt"/>
-    <PostMeta :post="post"/>
+    <h3 v-html="post.title" />
+    <p v-html="post.excerpt" />
+    <PostMeta :post="post" />
   </Card>
 </template>
 
 <script>
-import PostMeta from './PostMeta.vue'
+import PostMeta from "./PostMeta.vue";
 
 export default {
   components: {
@@ -16,7 +16,7 @@ export default {
   props: {
     post: { type: Object, required: true }
   }
-}
+};
 </script>
 
 <style lang="scss">
