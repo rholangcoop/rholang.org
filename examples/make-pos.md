@@ -2,7 +2,7 @@
 title: Make POS
 filepath: make-pos.rho
 filetype: vue
-order: 3
+order: 5
 ---
 
 ```js

@@ -2,7 +2,7 @@
 title: Prime calculation
 filepath: prime.rho
 filetype: vue
-order: 2
+order: 6
 ---
 
 ```javascript
