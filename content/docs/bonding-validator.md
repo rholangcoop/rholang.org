@@ -1,6 +1,6 @@
 # Running a Standalone Validator
 
-The information on this page is for people who will help launch and validate on the RChain public testnet.
+The information on this page is for people who will help launch and validate on the RChain public mainnet.
 
 ## Requirements
 

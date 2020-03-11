@@ -4,4 +4,4 @@ Nodes are the basis for the RChain network. The network layer is the lowest leve
 
 ## Who is this guide for?
 
-This document is a quick start guide for users to install and run the software for the purpose of evaluating Rholang and/or using the RChain public testnet. Detailed information about the the software for users and developers is available in on [https://github.com/rchain/rchain](https://github.com/rchain/rchain).
+This document is a quick start guide for users to install and run the software for the purpose of evaluating Rholang and/or using the RChain public mainnet. Detailed information about the the software for users and developers is available in on [https://github.com/rchain/rchain](https://github.com/rchain/rchain).
