@@ -27,9 +27,6 @@
             <Bullet />complete asynchronous language
           </li>
           <li>
-            <Bullet />formally verified
-          </li>
-          <li>
             <Bullet />concurrency build into the language
           </li>
         </ul>
