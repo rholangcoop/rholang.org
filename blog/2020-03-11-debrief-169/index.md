@@ -1,5 +1,5 @@
 ---
-title: RChain Community Debrief 169: Metamask interop demo
+title: "RChain Community Debrief 169: Metamask interop demo"
 slug: debrief-169
 author: [dckc]
 date: 2020-03-11
