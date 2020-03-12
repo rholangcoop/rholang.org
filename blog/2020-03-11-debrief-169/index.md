@@ -18,3 +18,5 @@ excerpt: "Debrief 169 features a Metamask interop demo"
  - LGM: re jusidiction... can't say too much before a meeting 2pm today with a connection @DarrylN: came up with.
  - Q ( @jimscarver: ): accepting board applications? Should the governance committee be recruiting?
    - A (LGM): the board is open to them; has a process for appointing between annual meetings.
+
+see also: [Community Debriefs](https://blog.rchain.coop/blog/category/community/debriefs/) category in the Coop blog
