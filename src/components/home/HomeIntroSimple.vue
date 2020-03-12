@@ -25,8 +25,8 @@
       </h1>
 
       <p class="intro__lead lead post mb">
-        Rholang is an open and massive scalable blockchain language with
-        unprecedented speed and reliability. Build on latest research from the
+        Rholang is an open and scalable blockchain language designed for
+        reliability. Build on latest research from the
         reflective high order calculus.
       </p>
       <p class="intro__links">
