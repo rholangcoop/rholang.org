@@ -85,6 +85,11 @@
         <p>Watch every Wednesday the development updates from Rchain</p>
       </FeatureCard>
 
+      <FeatureCard link="https://www.youtube.com/channel/UCi8byRkpJBbGgDot2pWXLHA/videos">
+        <h3>📹 CASPER Development Research</h3>
+        <p>Watch the latest research development led by Greg Meredith</p>
+      </FeatureCard>
+
       <FeatureCard link="https://rchain.atlassian.net/wiki/spaces/DOC/pages/3014657/Reading+List">
         <h3>📔 Blockchain 101</h3>
         <p>Get into Blockchain for starters</p>
