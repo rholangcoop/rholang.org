@@ -1,7 +1,7 @@
 ---
 title: RChain Community Debrief 169: Metamask interop demo
 slug: debrief-169
-author: [rchain stuff]
+author: [dckc]
 date: 2020-03-11
 tags: ["debrief", "wallet"]
 excerpt: "Debrief 169 features a Metamask interop demo"
