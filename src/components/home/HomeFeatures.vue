@@ -2,7 +2,7 @@
   <Section dots="true">
     <div
       class="homepage-features grid-cols"
-      style="grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));"
+      style="grid-template-columns: repeat(auto-fit, minmax(50%, 1fr)); "
     >
       <Feature>
         <h3>The language you've been waiting for</h3>
@@ -145,3 +145,9 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+.homepage-features {
+  padding: 0 0 calc(2% + var(--space)) 0;
+}
+</style>

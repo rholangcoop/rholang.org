@@ -1,7 +1,7 @@
 <template>
   <section class="section" :class="sectionClass">
     <div class="section--inner container" :class="sectionClassInner">
-      <slot/>
+      <slot />
     </div>
     <div v-if="dots" class="section__dots-bg dots-bg" />
     <slot name="outer" />
@@ -10,26 +10,26 @@
 
 <script>
 export default {
-  props: ['dark', 'dots', 'container', 'framed', 'secondary'],
+  props: ["dark", "dots", "container", "framed", "secondary"],
   computed: {
     sectionClass() {
-      let classes = []
-      if(this.secondary) classes.push('section--secondary')
-      if(this.dark) classes.push('section--dark')
-      return classes
+      let classes = [];
+      if (this.secondary) classes.push("section--secondary");
+      if (this.dark) classes.push("section--dark");
+      return classes;
     },
     sectionClassInner() {
-      let classes = []
-      if(this.framed) {
-        classes.push('container--framed')
+      let classes = [];
+      if (this.framed) {
+        classes.push("container--framed");
       }
-      if(this.container) {
-        classes.push('container-' + this.container)
+      if (this.container) {
+        classes.push("container-" + this.container);
       }
-      return classes
+      return classes;
     }
   }
-}
+};
 </script>
 
 <style lang="scss">
@@ -50,20 +50,18 @@ export default {
     }
   }
 
-
   &__dots-bg {
     height: 700px;
     max-width: 1500px;
     max-height: 100%;
     margin: 0 auto;
     position: absolute;
-    left:0;
-    right:0;
+    left: 0;
+    right: 0;
     bottom: 0;
     z-index: 1;
     opacity: 1;
   }
-
 
   &--inner {
     position: relative;
@@ -71,15 +69,19 @@ export default {
   }
 
   &--dark {
-    color: #FFF;
+    color: #fff;
     background: var(--dark-bg);
 
     p {
       color: currentColor;
     }
-    
-    h1, h2, h3, h4, a {
-      color: #FFF;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    a {
+      color: #fff;
     }
   }
 }
