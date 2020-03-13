@@ -29,5 +29,6 @@ Parameters for RChain Root Shard Nodes
 - Bonding minimum is 10,000 REV and maximum is 5,000,000 REV.
 - Validator returns are comprised of two parts:
 
+
       	  a 7% segniorage fee
       	  a transaction fee
