@@ -4,7 +4,11 @@
       <h2>Latest from Rholang blog</h2>
     </div>
     <div class="blog-posts container container-md">
-      <PostCard v-for="edge in $static.posts.edges" :key="edge.node.id" :post="edge.node" />
+      <PostCard
+        v-for="edge in $static.posts.edges"
+        :key="edge.node.id"
+        :post="edge.node"
+      />
     </div>
   </Section>
 </template>
@@ -28,14 +32,12 @@ query {
       node {
         id
         title
-        path
         date (format: "D. MMMM YYYY")
         timeToRead
         content
         author {
           id
           title
-          path
           avatar (width: 60)
         }
         excerpt
