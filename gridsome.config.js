@@ -97,27 +97,6 @@ module.exports = {
           plugins: ["@gridsome/remark-prismjs"]
         }
       }
-    },
-    {
-      use: "@gridsome/source-filesystem",
-      options: {
-        typeName: "BlogPost",
-        path: "./blog/*/index.md",
-        refs: {
-          author: "Contributor"
-        },
-        remark: {
-          plugins: [
-            "@gridsome/remark-prismjs",
-            [
-              "@noxify/gridsome-plugin-remark-embed",
-              {
-                enabledProviders: ["Soundcloud", "Youtube"]
-              }
-            ]
-          ]
-        }
-      }
     }
   ]
 };
