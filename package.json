@@ -17,7 +17,7 @@
     "clipboard-copy": "^3.0.0",
     "docsearch.js": "^2.6.2",
     "gh-pages": "^2.2.0",
-    "gridsome": "^0.7.13",
+    "gridsome": "^0.7.0",
     "marked": "^0.6.1",
     "typography": "^0.16.18",
     "vue-atlas": "^2.1.8",

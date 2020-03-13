@@ -32,6 +32,7 @@ query {
       node {
         id
         title
+        path
         date (format: "D. MMMM YYYY")
         timeToRead
         content
