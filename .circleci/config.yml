@@ -21,30 +21,7 @@ jobs:
             paths:
               - ~/.cache/yarn
 
-    deploy:
-      steps:
-        - run:
-            name: Deploy  to GH-Pages
-            command: yarn deploy
-
-    lint:
-      steps:
-        - attach_workspace:
-            at: ~/
-        - run:
-            name: Run ESLint
-            command: yarn run lint
-
-    test-unit:
-      steps:
-        - attach_workspace:
-            at: ~/
-        - run:
-            name: Run unit tests
-            command: yarn run test:unit
-
 workflows:
   build-deploy:
     jobs:
       - install
-      - deploy
