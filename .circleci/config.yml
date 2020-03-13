@@ -25,7 +25,7 @@ jobs:
   deploy:
     steps:
       - run:
-          name: Deploy to GH-Pages
+          name: Deploy  to GH-Pages
           command: yarn deploy
 
   lint:
