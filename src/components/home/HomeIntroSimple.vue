@@ -1,32 +1,22 @@
 <template>
   <Section class="intro">
-    <div class="container text-center ">
+    <div class="container text-center">
       <div class="intro__message mb" hidden></div>
 
       <h1 class="intro__title">
         <span>Rholang is a</span>
         <transition-group name="rotate" class="intro__keywords">
-          <div v-show="currentText == 0" key="0">
-            new concurrent language
-          </div>
-          <div v-show="currentText == 1" key="1">
-            performant langugage
-          </div>
-          <div v-show="currentText == 2" key="2">
-            blockchain langugage
-          </div>
-          <div v-show="currentText == 3" key="3">
-            langugage for distributed computing
-          </div>
-          <div v-show="currentText == 4" key="4">
-            community language
-          </div>
+          <div v-show="currentText == 0" key="0">new concurrent language</div>
+          <div v-show="currentText == 1" key="1">performant langugage</div>
+          <div v-show="currentText == 2" key="2">blockchain langugage</div>
+          <div v-show="currentText == 3" key="3">langugage for distributed computing</div>
+          <div v-show="currentText == 4" key="4">community language</div>
         </transition-group>
       </h1>
 
       <p class="intro__lead lead post mb">
-        Rholang is an open and massive scalable blockchain language with
-        unprecedented speed and reliability. Build on latest research from the
+        Rholang is an open and scalable blockchain language designed for speed and
+        reliability. Build on latest research from the
         reflective high order calculus.
       </p>
       <p class="intro__links">
