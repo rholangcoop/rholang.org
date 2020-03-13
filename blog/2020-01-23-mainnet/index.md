@@ -11,6 +11,8 @@ excerpt: "RChain Mainnet is live 🌟🎉"
 
 ![mainnet](./images/concert.jpg)
 
+_originally posted [in the coop blog](https://blog.rchain.coop/blog/2020/01/23/rchain-mainnet-announcement-the-block-height/)_
+
 RChain Mainnet is live. Initially, the Cooperative will run all the nodes in the root shard but expects that to change in the upcoming months. The Cooperative took a snapshot of the Ethereum chain at block height `9371743`, which occur on the morning of January 28, 2020 and published the balances going into the genesis block. The community reviewed the genesis block balances.
 
 RChain uses a pure proof-of-stake version of the correct-by-construction (CBC) Casper consensus framework.
@@ -26,6 +28,7 @@ Parameters for RChain Root Shard Nodes
 - When a validator requests to unbond to leave the validator set, the validator must wait a minimum of two weeks for their bond to be returned.
 - Bonding minimum is 10,000 REV and maximum is 5,000,000 REV.
 - Validator returns are comprised of two parts:
+
 
       	  a 7% segniorage fee
       	  a transaction fee
