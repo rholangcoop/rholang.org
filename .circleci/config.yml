@@ -3,9 +3,6 @@ docker:
   - image: circleci/node:latest-browsers
 jobs:
   build-and-deploy:
-    executor:
-      name: node/default
-      tag: "12.16.1"
     steps:
       - run: yarn install
       - run: yarn deploy
