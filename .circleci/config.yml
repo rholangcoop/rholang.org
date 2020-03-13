@@ -4,46 +4,47 @@ orbs:
   node: circleci/node@1.1.6
 
 jobs:
-  install:
-    steps:
-      - checkout
-      - restore_cache:
-          name: Restore Yarn Package Cache
-          keys:
-            - yarn-packages-{{ checksum "yarn.lock" }}
-      - run:
-          name: Install Dependencies
-          command: yarn --network-timeout 600000
-      - save_cache:
-          name: Save Yarn Package Cache
-          key: yarn-packages-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache/yarn
-  deploy:
-    steps:
-      - run:
-          name: Deploy  to GH-Pages
-          command: yarn deploy
+  build-deploy:
+    install:
+      steps:
+        - checkout
+        - restore_cache:
+            name: Restore Yarn Package Cache
+            keys:
+              - yarn-packages-{{ checksum "yarn.lock" }}
+        - run:
+            name: Install Dependencies
+            command: yarn --network-timeout 600000
+        - save_cache:
+            name: Save Yarn Package Cache
+            key: yarn-packages-{{ checksum "yarn.lock" }}
+            paths:
+              - ~/.cache/yarn
 
-  lint:
-    steps:
-      - attach_workspace:
-          at: ~/
-      - run:
-          name: Run ESLint
-          command: yarn run lint
+    deploy:
+      steps:
+        - run:
+            name: Deploy  to GH-Pages
+            command: yarn deploy
 
-  test-unit:
-    steps:
-      - attach_workspace:
-          at: ~/
-      - run:
-          name: Run unit tests
-          command: yarn run test:unit
+    lint:
+      steps:
+        - attach_workspace:
+            at: ~/
+        - run:
+            name: Run ESLint
+            command: yarn run lint
+
+    test-unit:
+      steps:
+        - attach_workspace:
+            at: ~/
+        - run:
+            name: Run unit tests
+            command: yarn run test:unit
 
 workflows:
-  version: 2
-  lint-and-test:
+  build-deploy:
     jobs:
       - install
       - deploy
