@@ -10,8 +10,17 @@ jobs:
       - checkout
       - node/with-cache:
           steps:
-            - run: yarn install
-            - run: yarn deploy
+            - run:
+                name: Installation
+                command: yarn install
+            - run:
+                name: Configuration
+                command: |
+                  git config user.email "rholang"
+                  git config user.name "rholang"
+            - run:
+                name: Deploy to GH
+                command: yarn deploy
 workflows:
   build-and-test:
     jobs:
