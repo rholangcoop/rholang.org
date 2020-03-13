@@ -27,7 +27,7 @@
             <Bullet />complete asynchronous language
           </li>
           <li>
-            <Bullet />formally verified
+            <Bullet />runtime engine written in type safe language (scala)
           </li>
           <li>
             <Bullet />concurrency build into the language
