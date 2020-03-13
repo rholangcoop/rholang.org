@@ -5,6 +5,7 @@ jobs:
   build-and-deploy:
     executor:
       name: node/default
+      tag: "12.16.1"
     steps:
       - checkout
       - node/with-cache:
