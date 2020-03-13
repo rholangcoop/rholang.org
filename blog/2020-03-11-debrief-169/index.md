@@ -20,3 +20,4 @@ https://www.youtube.com/watch?v=tZCp7vJ_V28
   - A (LGM): the board is open to them; has a process for appointing between annual meetings.
 
 see also: [Community Debriefs](https://blog.rchain.coop/blog/category/community/debriefs/) category in the Coop blog
+test
