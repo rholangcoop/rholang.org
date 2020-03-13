@@ -1,16 +1,16 @@
-version: 2.1
-
-defaults: &defaults
-  working_directory: ~/project/vue
-  docker:
-    - image: vuejs/ci
-
+version: 2
 jobs:
-  build-and-deploy:
+  build-and-test:
+    docker:
+      - image: circleci/node:10.16.3
+
+    working_directory: ~/repo
     steps:
       - checkout
-      - run: yarn install
-      - run: yarn deploy
+      - node/with-cache:
+          steps:
+            - run: yarn install
+            - run: yarn deploy
 workflows:
   build-and-test:
     jobs:
