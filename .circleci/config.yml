@@ -1,9 +1,7 @@
 version: 2.1
 
-defaults: &defaults
-  working_directory: ~/project/vue
-  docker:
-    - image: vuejs/ci
+orbs:
+  node: circleci/node@1.1.6
 
 jobs:
   install:
@@ -51,3 +49,4 @@ workflows:
   lint-and-test:
     jobs:
       - install
+      - deploy
