@@ -26,7 +26,6 @@ jobs:
           command: yarn deploy
 
   lint:
-    <<: *defaults
     steps:
       - attach_workspace:
           at: ~/
@@ -35,7 +34,6 @@ jobs:
           command: yarn run lint
 
   test-unit:
-    <<: *defaults
     steps:
       - attach_workspace:
           at: ~/
