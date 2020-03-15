@@ -20,7 +20,7 @@ jobs:
                   git config user.name "rholang"
             - add_ssh_keys:
                 fingerprints:
-                  - "01:a0:26:02:e0:b9:43:ba:11:61:3f:76:e7:03:0a:07"
+                  - "ad:1d:24:40:b5:4b:8e:e4:4c:6b:f7:b5:6a:49:6a:ce"
             - run:
                 name: Deploy to GH
                 command: yarn deploy
