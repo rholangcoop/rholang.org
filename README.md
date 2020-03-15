@@ -34,4 +34,4 @@ This is the repository of the website [https://rholang.github.io/](https://rhola
 
 # Contributing
 
-This community driven project should bring all the awesome resources for Rholang and Rchain together. Feel free to make a push request.
+This community driven project should bring all the awesome resources for Rholang and Rchain together. Feel free to make a Pull Request.
