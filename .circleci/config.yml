@@ -18,9 +18,9 @@ jobs:
                 command: |
                   git config user.email "rholang"
                   git config user.name "rholang"
-          - add_ssh_keys:
-              fingerprints:
-                - "79:e4:66:d2:6f:28:b5:e5:d6:7e:de:f6:d1:fc:28:9d"
+            - add_ssh_keys:
+                fingerprints:
+                  - "79:e4:66:d2:6f:28:b5:e5:d6:7e:de:f6:d1:fc:28:9d"
             - run:
                 name: Deploy to GH
                 command: yarn deploy
