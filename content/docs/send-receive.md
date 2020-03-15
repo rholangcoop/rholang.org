@@ -2,7 +2,7 @@
 
 Sending and receiving is one of the most important things to understand in Rholang.
 
-> Because Rholang is an asynchronous programming langugage, there is no return in a function.That's why you call a function `HelloWorld(args)` via sending on the `functions` name HelloWorld. You are sending via the ! syntax.
+> Because Rholang is an asynchronous programming language, there is no return in a function.That's why you call a function `HelloWorld(args)` via sending on the `functions` name HelloWorld. You are sending via the ! syntax.
 
 > Because of the asynchrony you don't know when the `function` you called via HelloWorld!(args) is sending the processed data **back** over some other channel. Thats why there is no `return` in the `function`. Instead Rholang has the for(args<-channels) syntax for waiting until all the needed arguments are received over the channels.
 
