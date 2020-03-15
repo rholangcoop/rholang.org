@@ -3,9 +3,9 @@ orbs:
   node: circleci/node@1.1.6
 jobs:
   build-and-deploy:
-    branches:
-      only:
-        - source
+    filters:
+      branches:
+        only: source
     executor:
       name: node/default
       tag: "12.16.1"
