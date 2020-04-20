@@ -3,11 +3,12 @@
     <div class="grid-cols grid-cols--gap-large grid-cols--full-md">
       <Card class="text-center" title="Write a smart contract">
         <h4>IDEs</h4>
-        <p>Visual Studio Code Plugin</p>
-        <p>Intellij Plugin</p>
-        <p>Rchain Cloud</p>
-        <p>Cryptofex IDE</p>
-        <p>Local Node</p>
+        <ul>
+          <li><a href="https://marketplace.visualstudio.com/items?itemName=tgrospic.rholang">Visual Studio Code Plugin</a></li>
+          <li><a href="https://github.com/tgrospic/rholang-idea">Intellij Plugin</a></li>
+          <li><a href="https://github.com/rchain-community/rchain.cloud">RChain Cloud</a></li>
+          <li><a href="https://cryptofex.io/">Cryptofex IDE</a></li>
+        </ul>
 
         <template slot="outer">
           <Dots class="hide-for-small" />
