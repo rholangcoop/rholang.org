@@ -105,14 +105,12 @@
         <p>Community driven Rchain Wallet</p>
       </FeatureCard>
 
-      <FeatureCard
-        link="https://chrome.google.com/webstore/detail/rui%E9%94%90/jkjnjhfcoeoogcdmdhmckfchlbecholg"
-      >
+      <FeatureCard link="https://wenode.io/rui/">
         <h3>💼 Rui Wallet</h3>
         <p>China community driven Rchain Wallet for chrome</p>
       </FeatureCard>
 
-      <FeatureCard link="https://play.google.com/store/apps/details?id=app.icapo.capo">
+      <FeatureCard link="https://icapo.app/">
         <h3>💼 Capo Wallet</h3>
         <p>Community driven Rchain Wallet for android</p>
       </FeatureCard>
