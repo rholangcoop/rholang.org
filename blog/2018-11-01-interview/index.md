@@ -11,7 +11,7 @@ RCON3 INTERVIEW: MIKE STAY
 
 ![interview](./images/image0.jpg)
 
-https://youtu.be/MBdfkOtseB8
+https://www.youtube.com/watch?v=MBdfkOtseB8
 
 ### MIKE STAY’S BACKGROUND
 
