@@ -12,8 +12,10 @@ RCON3 INTERVIEW: MIKE STAY
 ![interview](./images/image0.jpg)
 
 https://www.youtube.com/watch?v=MBdfkOtseB8
+
 <br/><br/>
 <br/><br/>
+
 MIKE STAY’S BACKGROUND
 
 Mike worked with Google in 2007, creating software security tools for the ad team. In 2009, he met Greg Meredith and became interested in formalizing the steps of computation, trying to characterize it in a way he did in the rosetta stone paper.
