@@ -37,3 +37,4 @@ This is the repository of the website [https://rholang.github.io/](https://rhola
 This community driven project should bring all the awesome resources for Rholang and Rchain together. Feel free to make a Pull Request.
 - if you only want to change some existing file, just edit the markdown file in /content
 - if you want to add a markdown file, you have to add it to the yaml file in /src/data
+- when the pull request is approved the website is automatically rebuild with CirleCI
