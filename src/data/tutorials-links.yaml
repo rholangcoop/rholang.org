@@ -37,7 +37,7 @@
 
 - title : Rho Lambda
   items:
-    - title: Indtroduction
+    - title: Introduction
       link: /tutorials/introduction/
     - title: Booleans
       link: /tutorials/boolean/
