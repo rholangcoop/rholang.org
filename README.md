@@ -27,7 +27,7 @@ This is the repository of the website [https://rholang.github.io/](https://rhola
 
 - /content
   - all markdown files belong here
- - /src/data
+- /src/data
   - yaml files for indexing markdown files
 
 ## Algolia Docsearch
