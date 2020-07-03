@@ -4,14 +4,14 @@
       <g-image
         class="logo__svg hide-for-small"
         alt="Rholang.org"
-        src="~/assets/images/rholang-logo.png"
+        src="~/assets/images/rholang-logo.svg"
         width="200px"
         immediate="true"
       />
       <g-image
         class="logo__svg show-for-small logo__svg--small"
         alt="Rholang.org"
-        src="~/assets/images/rholang-logo-small.png"
+        src="~/assets/images/rholang-logo-small.svg"
         width="200px"
         immediate="true"
       />
