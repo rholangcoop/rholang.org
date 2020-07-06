@@ -61,7 +61,7 @@ export default {
 
 <style lang="scss">
 .intro {
-  padding: calc(2% + var(--space)) 0;
+  padding: calc(9% + var(--space)) 0;
   background-image: url("~@/assets/images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
