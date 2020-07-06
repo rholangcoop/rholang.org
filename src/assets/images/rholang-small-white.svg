@@ -14,7 +14,7 @@
   <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
     <rect width="592" height="370" fill="rgba(255,255,255,0)"/>
     <rect id="Rectangle_1" data-name="Rectangle 1" width="370" height="370" fill="url(#linear-gradient)"/>
-    <text id="Rho" transform="translate(185 242)" fill="#fff" font-size="100" font-family="Roboto-Regular, Roboto" letter-spacing="0.024em"><tspan x="0" y="105">Rho</tspan></text>
-    <text id="lang" transform="translate(374 243)" font-size="100" font-family="Roboto-Regular, Roboto" letter-spacing="0.024em"><tspan x="0" y="105">lang</tspan></text>
+    <text id="Rho" transform="translate(185 253)" fill="#fff" font-size="100" font-family="ArialMT, Arial" letter-spacing="-0.023em"><tspan x="0" y="91">Rho</tspan></text>
+    <text id="lang" transform="translate(374 253)" font-size="100" font-family="ArialMT, Arial" letter-spacing="0.024em"><tspan x="0" y="91">lang</tspan></text>
   </g>
 </svg>
