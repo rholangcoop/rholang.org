@@ -35,4 +35,4 @@ rnode run --network <arg> --shard-id <arg> --bootstrap <arg> --finalization-rate
 ./rnode --help
 ```
 
-> if the message: `- Waiting for first connection` is there for more than 1 minute, please check your ports and ip: [Network Configuration](../network-configuration)
+> if the message: `- Waiting for first connection` is there for more than 1 minute, please check your ports and ip: [Network Configuration](/docs/network-configuration)

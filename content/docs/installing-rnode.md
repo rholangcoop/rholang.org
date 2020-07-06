@@ -74,7 +74,7 @@ Although it is simple to install RNode in Docker, it is important to have an und
 - Install Docker [Install Docker](https://docs.docker.com/docker-for-windows/install/).
 - Start Docker Desktop
 - open cmd: `$ docker pull rchain/rnode:latest`
-- go to tutorial for running rnode in cmd: [Command line docker](../running-rnode-docker)
+- go to tutorial for running rnode in cmd: [Command line docker](/docs/running-rnode-docker)
 
 ## ARM
 
