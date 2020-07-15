@@ -153,6 +153,7 @@ header {
   .header-inner {
     padding: 0 var(--space);
     min-height: var(--header-height);
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.4);
   }
 
   @media screen and (min-width: 992px) and (max-resolution: 1) {
