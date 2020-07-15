@@ -137,7 +137,7 @@ header {
   flex-wrap: nowrap;
   position: sticky;
   transition: background-color 0.3s, border-color, 0.3s;
-  box-shadow: 0 0px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.16);
 
   .header-bar {
     background: linear-gradient(90deg, #9c0000 50%, rgb(255, 228, 227) 100%);
