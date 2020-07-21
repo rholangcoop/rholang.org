@@ -4,7 +4,7 @@ slug: seminar
 author: [dckc]
 date: 2020-07-21
 tags: ['seminar']
-excerpt: 'Structural types for algebraic theories'
+excerpt: 'MIT Category Theory Seminar with Christian Williams'
 ---
 
 ## Christian Williams: Structural types for algebraic theories
