@@ -9,7 +9,7 @@ excerpt: 'MIT Category Theory Seminar with Christian Williams'
 
 https://www.youtube.com/watch?v=aJyxtUopJ74
 
-# Abstract
+### Abstract
 
 RChain is a distributed computing system based on a concurrent language with reflection. The ρ calculus, or reflective higher-order π calculus, is a concurrent language with operations that control the distinction between data and code. This gives networks intrinsic structure, which can offer deep knowledge and utility. This can be used to think globally about the web.
 
