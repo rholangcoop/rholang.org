@@ -7,8 +7,6 @@ tags: ['seminar']
 excerpt: 'MIT Category Theory Seminar with Christian Williams'
 ---
 
-## MIT Category Theory Seminar with Christian Williams
-
 https://www.youtube.com/watch?v=aJyxtUopJ74
 
 # Abstract
