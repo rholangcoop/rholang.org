@@ -17,4 +17,4 @@ To reason about this structure, Namespace Logic [Meredith, Radestock 2005] augme
 
 We present a categorical formulation of the algorithm (-) + first order logic. A language can be presented as an algebraic theory with binding; we then form its topos of presheaves, and therein construct a polymorphic type system with subtyping. The algorithm extends the idea of namespace logic to a broad class of formal languages, and it is especially powerful in concurrent languages with reflection.
 
-A draft paper can be found [here][draft](https://github.com/cbw124/stat/blob/master/stat.pdf)
+A draft paper can be found ![here](https://github.com/cbw124/stat/blob/master/stat.pdf)
