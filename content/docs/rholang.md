@@ -10,29 +10,22 @@ Rholang is completely asynchronous, in the sense that while you can read a messa
 
 [Language specification](https://developer.rchain.coop/assets/rholang-spec-0.2.pdf)
 
-## RChain Cloud
-
-Members of the RChain community provide a public web-based [online rholang interpreter](http://rchain.cloud) ([mirror](https://rchaincloud.inblock.io)). This tool is the easiest way to get started and does not require installing any software.
-
 ## VSCode Plugin
 
 This is the Visual Studio Code extension for the Rholang programming language. It has support for syntax highlighting and code evaluation with error highlighting.
 [Marketplace VSCode](https://marketplace.visualstudio.com/items?itemName=tgrospic.rholang)
+
+## Local Node
+
+Another way to run rholang code is to start up your own local RNode and use its rholang interpreter. For that rnode has to be installed. There are two modes to run rholang code locally: repl and eval
+With repl you can type rholang code directly into the console and execute it. With eval you are running a .rho file and execute this file.
+
+The command for repl with docker is:
+
+- cmd:`$ docker run -it --rm --name rnode -v /data/rhoc-daemon-01:/var/lib/rnode rchain/rnode:latest repl`
 
 ## Cryptofex IDE
 
 Pyrofex is developing an up-and-coming integrated development environment called [Cryptofex](https://cryptofex.io/). Cryptofex runs natively on windows, mac, and linux/. It offers rholang syntax highlighting and is capable of evaluating rholang code internally or with a running RNode. The IDE also supports ethereum development.
 
 - **Write Rholang using an IntelliJ plugin** - This [Rholang IntelliJ plugin](https://github.com/tgrospic/rholang-idea) was created by a RChain community member.
-
-## Local Node
-
-The tried and true way to run rholang code is to start up your own local RNode and use its rholang interpreter. First, you'll have to [install RNode](https://rchain.atlassian.net/wiki/spaces/CORE/pages/428376065/User+guide+for+running+RNode) for your platform.
-
-For novice learners there are step-by-step guides on setting up a node using [AWS](https://blog.rchain.coop/running-rnode-0-5-3-on-amazon-ec2/) or [Docker](https://blog.rchain.coop/running-rnodev-0-6-x-with-docker/).
-
-Once RNode is installed, you can run a basic standalone node
-
-```bash
-$ rnode run -s -n
-```

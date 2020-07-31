@@ -1,24 +1,31 @@
 # Beginners Tutorial
+
 Written by Joshy Orndorff
 
-In order to run the rholang snippets in this tutorial, you will need some kind of development environment. This is not an exhaustive guide to rholang development tools or stacks. Rather, it shows a few common basic development environments to get you started. 
-
-## RChain Cloud 
-Members of the RChain community provide a public web-based [online rholang interpreter](http://rchain.cloud) ([mirror](https://rchaincloud.inblock.io)). This tool is the easiest way to get started and does not require installing any software.
+In order to run the rholang snippets in this tutorial, you will need some kind of development environment. This is not an exhaustive guide to rholang development tools or stacks. Rather, it shows a few common basic development environments to get you started.
 
 ## VSCode Plugin
+
 This is the Visual Studio Code extension for the Rholang programming language. It has support for syntax highlighting and code evaluation with error highlighting.
 [Marketplace VSCode](https://marketplace.visualstudio.com/items?itemName=tgrospic.rholang)
 
 ## Cryptofex IDE
+
 Pyrofex is developing an up-and-coming integrated development environment called [Cryptofex](https://cryptofex.io/). Cryptofex runs natively on windows, mac, and linux/. It offers rholang syntax highlighting and is capable of evaluating rholang code internally or with a running RNode. The IDE also supports ethereum development.
 
 ## Local Node
-The tried and true way to run rholang code is to start up your own local RNode and use its rholang interpreter. First, you'll have to [install RNode](https://rchain.atlassian.net/wiki/spaces/CORE/pages/428376065/User+guide+for+running+RNode) for your platform.
 
-For novice learners there are step-by-step guides on setting up a node using [AWS](https://blog.rchain.coop/running-rnode-0-5-3-on-amazon-ec2/) or [Docker](https://blog.rchain.coop/running-rnodev-0-6-x-with-docker/).
+Another way to run rholang code is to start up your own local RNode and use its rholang interpreter. For that rnode has to be installed. There are two modes to run rholang code locally: repl and eval
+With repl you can type rholang code directly into the console and execute it. With eval you are running a .rho file and execute this file.
+
+The command for repl with docker is:
+
+- cmd:`$ docker run -it --rm --name rnode -v /data/rhoc-daemon-01:/var/lib/rnode rchain/rnode:latest repl`
+
+For use without docker use the following instructions:
 
 Once RNode is installed, you can run a basic standalone node
+
 ```bash
 $ rnode run -s -n
 ```

@@ -32,7 +32,7 @@ docker run -it --rm --name rnode -v /data/rhoc-daemon-01:/var/lib/rnode rchain/r
 - help documentation
 
 ```bash
-docker run -it --rm --name rnode -v /data/rhoc-daemon-01:/var/lib/rnode rchain/rnode:latest --help
+docker run rchain/rnode:latest --help
 ```
 
 > if the message: `- Waiting for first connection` is there for more than 1 minute, please check your ports and ip: [Network Configuration](/docs/network-configuration)

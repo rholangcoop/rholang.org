@@ -71,6 +71,7 @@ Windows 10
 Although it is simple to install RNode in Docker, it is important to have an understanding for working with Docker to successfully run and interface with RNode.
 
 - If you are brand new to working with Docker, read the [Docker get started documentation](https://docs.docker.com/docker-for-windows/).
+- Install latest windows 10 updates
 - Install Docker [Install Docker](https://docs.docker.com/docker-for-windows/install/).
 - Start Docker Desktop
 - open cmd: `$ docker pull rchain/rnode:latest`
