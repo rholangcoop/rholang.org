@@ -102,7 +102,7 @@ Get a count of blocks in Docker
 Report status in Docker
 
 ```bash
-docker run -it --rm --network rnode-net --name rnode -v $HOME/var/rholang:/var/ rchain/rnode:latest --grpc-host rnode2 show-blocks
+docker run -it --rm --network-id rnode-net --name rnode -v $HOME/var/rholang:/var/ rchain/rnode:latest --grpc-host rnode2 show-blocks
 ```
 
 ## Generate a public/private key set

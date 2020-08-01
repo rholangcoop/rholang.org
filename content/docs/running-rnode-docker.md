@@ -10,7 +10,7 @@ These are the run commands to start an RNode Observer Node (read-only node). Wit
 docker run -it --rm --name rnode -v /data/rhoc-daemon-01:/var/lib/rnode rchain/rnode:latest run --network <args> --shard-id <args> --bootstrap <args> -finalization-rate <args> --fault-tolerance-threshold <args> --synchrony-constraint-threshold <args> --fork-choice-stale-threshold <args> --fork-choice-check-if-stale-interval <args> --drop-peer-after-retries <args> --give-up-after-skipped <args>
 ```
 
-- `--network <arg>` The network to run on (testnet , mainnet).
+- `--network-id <arg>` The network to run on (testnet , mainnet).
 - `--shard-id <arg>` The network is splitted into shards for scaling.
 - `--bootstrap <arg>` The bootstrap server for initial connection to the network.
 - `--finalization-rate <arg>` Block finalization is triggered after adding every 'n' blocks. Use this option to configure this.

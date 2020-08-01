@@ -7,10 +7,10 @@ These are the run commands to start an RNode Observer Node (read-only node). Wit
 > Please fill in the `<bootstrap ID>`. The current network ID is posted on [RChain public testnet information](https://rchain.atlassian.net/wiki/spaces/CORE/pages/678756429/RChain+public+testnet+information).
 
 ```bash
-rnode run --network <arg> --shard-id <arg> --bootstrap <arg> --finalization-rate <arg> --fault-tolerance-threshold <arg> --synchrony-constraint-threshold <arg> --fork-choice-stale-threshold <arg> --fork-choice-check-if-stale-interval <arg> --drop-peer-after-retries <arg> --give-up-after-skipped <arg>
+rnode run --network-id <arg> --shard-id <arg> --bootstrap <arg> --finalization-rate <arg> --fault-tolerance-threshold <arg> --synchrony-constraint-threshold <arg> --fork-choice-stale-threshold <arg> --fork-choice-check-if-stale-interval <arg> --drop-peer-after-retries <arg> --give-up-after-skipped <arg>
 ```
 
-- `--network <arg>` The network to run on (testnet , mainnet).
+- `--network-id <arg>` The network to run on (testnet , mainnet).
 - `--shard-id <arg>` The network is splitted into shards for scaling.
 - `--bootstrap <arg>` The bootstrap server for initial connection to the network.
 - `--finalization-rate <arg>` Block finalization is triggered after adding every 'n' blocks. Use this option to configure this.
@@ -26,7 +26,7 @@ rnode run --network <arg> --shard-id <arg> --bootstrap <arg> --finalization-rate
 - run rnode
 
 ```bash
-./rnode run --network mainnet --shard-id root --bootstrap "rnode://487e2c0c519b450b61253dea0a23b4d184a50089@node0.root-shard.mainnet.rchain.coop?protocol=40400&discovery=40404" --finalization-rate 1 --fault-tolerance-threshold -1 --synchrony-constraint-threshold 0 --fork-choice-stale-threshold 30minutes --fork-choice-check-if-stale-interval 30minutes --drop-peer-after-retries 0 --give-up-after-skipped 0
+./rnode run --network-id mainnet --shard-id root --bootstrap "rnode://487e2c0c519b450b61253dea0a23b4d184a50089@node0.root-shard.mainnet.rchain.coop?protocol=40400&discovery=40404" --finalization-rate 1 --fault-tolerance-threshold -1 --synchrony-constraint-threshold 0 --fork-choice-stale-threshold 30minutes --fork-choice-check-if-stale-interval 30minutes --drop-peer-after-retries 0 --give-up-after-skipped 0
 ```
 
 - help documentation

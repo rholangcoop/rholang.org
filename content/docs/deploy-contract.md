@@ -44,7 +44,7 @@ The cost is measured in 10E-9 REV (10 nanoREV).
 ## Deploy a Rholang contract to a known validator in Docker
 
 ```bash
-docker run -it --rm --name rnode -v /data/rhoc-daemon-01:/var/lib/rnode rchain/rnode:latest run --bootstrap <bootstrap ID> --network <network> --grpc-host <address of known validator> deploy --from "0x1" --phlo-limit <value> --phlo-price <value> --private-key-path <path to encrypted private key> <path to Rholang file>
+docker run -it --rm --name rnode -v /data/rhoc-daemon-01:/var/lib/rnode rchain/rnode:latest run --bootstrap <bootstrap ID> --network-id <network> --grpc-host <address of known validator> deploy --from "0x1" --phlo-limit <value> --phlo-price <value> --private-key-path <path to encrypted private key> <path to Rholang file>
 ```
 
 ## Deploy returns a DeployID

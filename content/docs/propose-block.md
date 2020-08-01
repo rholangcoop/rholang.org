@@ -1,8 +1,11 @@
 # Propose a block to the blockchain
-Propose triggers a block proposal to the network. This is a function only available to validating nodes. With a deploy you send your package to a validator and with a propose you request the validator to process your package. Validator try to bundle many deploys for best performance before sending them to the network for consensus. 
+
+Propose triggers a block proposal to the network. This is a function only available to validating nodes. With a deploy you send your package to a validator and with a propose you request the validator to process your package. Validator try to bundle many deploys for best performance before sending them to the network for consensus.
 
 ## Propose a new block (non-Docker)
+
 Example of the propose command on the server side:
+
 ```bash
 root@salt:~# rnode propose
 21:52:06.959 [main] INFO  c.r.n.configuration.Configuration$ - Starting with profile default
@@ -19,6 +22,7 @@ Here is an example of the console output following the propose. The log shows th
 ```
 
 ## Propose a new block (Docker)
+
 ```bash
-docker run -it --rm --network rnode-net --name rnode-propose1 -v $HOME/var/rholang:/var/ rchain/rnode:latest --grpc-host rnode1 propose
+docker run -it --rm --network-id rnode-net --name rnode-propose1 -v $HOME/var/rholang:/var/ rchain/rnode:latest --grpc-host rnode1 propose
 ```
