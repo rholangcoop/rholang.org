@@ -26,7 +26,9 @@ docker run -it --rm --name rnode -v /data/rhoc-daemon-01:/var/lib/rnode rchain/r
 - run rnode
 
 ```bash
-docker run -it --rm --name rnode -v /data/rhoc-daemon-01:/var/lib/rnode rchain/rnode:latest run --network mainnet --shard-id root --bootstrap "rnode://487e2c0c519b450b61253dea0a23b4d184a50089@node0.root-shard.mainnet.rchain.coop?protocol=40400&discovery=40404" --finalization-rate 1 --fault-tolerance-threshold -1 --synchrony-constraint-threshold 0 --fork-choice-stale-threshold 30minutes --fork-choice-check-if-stale-interval 30minutes --drop-peer-after-retries 0 --give-up-after-skipped 0
+docker run -d -v $DATA_FOLDER:/var/lib/rnode --network host --name rchain-mainet-peer rchain/rnode:latest run \
+--bootstrap "rnode://487e2c0c519b450b61253dea0a23b4d184a50089@node0.root-shard.mainnet.rchain.coop?protocol=40400&discovery=40404" \
+--finalization-rate 1 --fault-tolerance-threshold -1 --network-id mainnet --shard-name root --max-number-of-parents 1
 ```
 
 - help documentation
