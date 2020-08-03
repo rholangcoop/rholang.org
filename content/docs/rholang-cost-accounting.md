@@ -56,7 +56,9 @@ Suppose there are P produces and C consumes in parallel in the deployment; the m
 Complexity Analysis of Pattern Language Fragments
 We identified four sublanguages of the pattern matching language worth considering.
 
-### Arity. This is the simplest sublanguage, where matching is done solely on the number of message parts. The comparison happens in a single instruction, so the complexity is 1.
+### Arity.
+
+This is the simplest sublanguage, where matching is done solely on the number of message parts. The comparison happens in a single instruction, so the complexity is 1.
 
 No par. This sublanguage allows recursively atomic processes, but not, for instance, RÇON. Here, the match is essentially comparing protobufs for equality, so the complexity of a single match is proportional to the sum of the lengths of the pattern and the target. Call this quantity k for the analysis below.
 Par + /\. This sublanguage allows all processes, but only the logical connective AND (/\). Given n atoms in the pattern and m atoms in the target, each pattern can potentially match any one of the target atoms. If there is a free variable in the pattern, all the concrete atoms match first, the first free variable gets the rest, and all other top-level free vars get Nil. Therefore the complexity is O(knm).
