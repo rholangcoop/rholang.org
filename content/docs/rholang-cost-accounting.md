@@ -70,7 +70,7 @@ Note also that the match and matches keywords can still make use of sublanguage 
 
 ### Implementation difficulty
 
-Mateusz Gorski (gorski@pyrofex.net) has done all the cost accounting work so far and also a lot of work on the interpreter. He says it would be an order of magnitude easier to restrict the pattern language in consumes than to do the accounting for failed matches.
+Mateusz Gorski has done all the cost accounting work so far and also a lot of work on the interpreter. He says it would be an order of magnitude easier to restrict the pattern language in consumes than to do the accounting for failed matches.
 
 There are two ways they might do it. The first restricts the grammar. Changing the grammar won't need to change any of the matcher code, since it will statically reject the more extensive patterns before they get to the matcher.
 
