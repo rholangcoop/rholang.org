@@ -11,17 +11,6 @@
     - title: Running RNode (Docker)
       link: /docs/running-rnode-docker/
 
-- title: RNode
-  items:
-    - title: Commands for RNode
-      link: /docs/commands/
-    - title: Deploy a Rholang contract
-      link: /docs/deploy-contract/
-    - title: Propose a block to the blockchain
-      link: /docs/propose-block/
-    - title: Check block finalization
-      link: /docs/block-finalization/
-
 - title: Rholang
   items:
     - title: Rholang
@@ -41,12 +30,24 @@
     - title: Cost accounting
       link: /docs/rholang-cost-accounting
 
+- title: RNode
+  items:
+    - title: Commands for RNode
+      link: /docs/commands/
+    - title: Deploy a Rholang contract
+      link: /docs/deploy-contract/
+    - title: Propose a block to the blockchain
+      link: /docs/propose-block/
+    - title: Check block finalization
+      link: /docs/block-finalization/
+
 - title: Rspace
   items:
     - title: Overview
       link: /docs/rspace-intro/
     - title: Implementation
       link: /docs/rspace-tut/
+
 - title: Validator
   items:
     - title: Current state of the protocol
@@ -69,7 +70,7 @@
 
 - title: Research
   items:
-    - title: History Blockchain
-      link: /docs/history-blockchain/
     - title: Research
       link: /docs/research/
+    - title: History Blockchain
+      link: /docs/history-blockchain/
