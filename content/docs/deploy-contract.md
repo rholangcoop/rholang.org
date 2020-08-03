@@ -6,6 +6,10 @@ Deploy a Rholang source file to a validator on an existing running node. The dep
 
 The deploy command requires the following specifications in addition to the Rholang file:
 
+```bash
+rnode --grpc-host <address of known validator> deploy --phlo-limit <value> --phlo-price <value> --private-key-path <path to encrypted private ke> <path to .rho file> --valid-after-block-number <valid-after-block>
+```
+
 - `--phlo-limit <arg>` The amount of phlo to use for the
   transaction (unused phlo is refunded).
   Must be positive integer.
@@ -18,10 +22,6 @@ The deploy command requires the following specifications in addition to the Rhol
   Look this up with the command: `./rnode show-blocks`
   Deploy a Rholang contract to a known validator
   Unless you are a validator in the RChain network or a private network, you will typically deploy Rholang to a known validator with the intent to add the contract to the blockchain.
-
-```bash
-rnode --grpc-host <address of known validator> deploy --phlo-limit <value> --phlo-price <value> --private-key-path <path to encrypted private ke> <path to .rho file> --valid-after-block-number <valid-after-block>
-```
 
 Example:
 

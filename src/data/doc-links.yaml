@@ -38,7 +38,15 @@
       link: /docs/iteration/
     - title: Design patterns
       link: /docs/design-patterns/
+    - title: Cost accounting
+      link: /docs/rholang-cost-accounting
 
+- title: Rspace
+  items:
+    - title: Overview
+      link: /docs/rspace-intro/
+    - title: Implementation
+      link: /docs/rspace-tut/
 - title: Validator
   items:
     - title: Current state of the protocol
