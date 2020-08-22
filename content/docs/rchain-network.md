@@ -54,9 +54,9 @@ Observer nodes are same as validators but started without private key provided, 
 
 # Run RChain network in the cloud with terraform
 
-Your can also start a complete new Rchain network on large cloud providers (AWS, Google Cloud, IBM)
+Your can also start a complete new Rchain network on large cloud providers (AWS, Google Cloud, IBM).
 
-> You first have to download the data from: [Rchain-terraform](https://github.com/rchain/rchain-testnet-node)
+> You first have to download the data from: [Rchain-terraform](https://github.com/rchain/rchain-testnet-node).
 
 Inside the folder resources-tf.{network_name} (e.g. resources-tf.testnet) folder you can wipe out an existing network and reestablish a new one by running:
 
