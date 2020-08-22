@@ -56,8 +56,10 @@
       link: /docs/bonding-network/
     - title: Run a Standalone Validator
       link: /docs/bonding-validator/
-    - title: Run a Rchain Network
-      link: /docs/rchain-network/
+    - title: Run a Rchain Network (docker)
+      link: /docs/rchain-network-docker/
+    - title: Run a Rchain Network (terraform)
+      link: /docs/rchain-network-terraform/
 
 - title: Shards
   items:
