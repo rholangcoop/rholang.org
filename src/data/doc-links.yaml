@@ -56,6 +56,8 @@
       link: /docs/bonding-network/
     - title: Run a Standalone Validator
       link: /docs/bonding-validator/
+    - title: Run a Rchain Network
+      link: /docs/rchain-network/
 
 - title: Shards
   items:
