@@ -30,6 +30,8 @@ Configuration files for network nodes: [./conf]
 1. [docker](https://docs.docker.com/install/) >=17.09.0
 2. [docker-compose](https://docs.docker.com/compose/install/) >=1.17.0
 
+## Start Network
+
 Start a network of 3 nodes: containers `rnode.bootstrap`, `rnode.validator1` and `rnode.validator2`
 
     $ docker-compose -f ./shard.yml up
