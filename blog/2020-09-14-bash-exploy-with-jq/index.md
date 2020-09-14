@@ -6,7 +6,7 @@ date: 2020-09-14
 tags: ['tools', 'bash', 'jq', 'explore-deploy']
 excerpt: 'explore-deploy bash script using jq'
 ---
-You can run read only contracts on rchain without paying any fee using the http explore-deploy api call. Every returned value from an explore-deploy is enclosed in a structure having a type and data field. Pulling out just the data as json is needed to use the result in json results without type and data constructs. This example uses the bash json utilityy jq to 'detype' the output. While jq is good for many uses of json in bash using javascript might have been as easy in this case.
+You can run read only contracts on rchain without paying any fee using the http explore-deploy api call. Every returned value from an explore-deploy is enclosed in a structure having a type and data field. Pulling out just the data as json is often needed to use the complete result in json without enclosing type and data constructs. This example uses the bash json utilityy jq to 'detype' the output. While jq is good for many uses of json in bash using javascript might have been as easy in this case.
 ```sh
 #usage: ./explore.sh URI
 uri=${1-"rho:id:ar17ohqq83kx7a16nbfquwu9gxidduk9hstgbs9gkbj63o8gqyh1ye"}
