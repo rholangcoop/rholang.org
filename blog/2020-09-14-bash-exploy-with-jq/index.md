@@ -1,16 +1,15 @@
 ---
-title: 'The role of types in refactoring the internet and Structural type theory of higher-order languages'
-slug: seminar
-author: [jimscarver, dckc]
+title: 'RNode explore-deploy bash script using jq'
+slug: tools
+author: [jimscarver]
 date: 2020-09-14
-tags: ['seminar']
-excerpt: 'A joint talk with Greg Meredith of RChain and Christian Williams from UC Riverside'
+tags: ['tools', 'bash', 'jq', 'explore-deploy']
+excerpt: 'explore-deploy bash script using jq'
 ---
-
-#usage: ./explore.sh URI ['{code}']
+You can run read only contracts on rchain without paying any fee using the http explore-deploy api call. Every returned value from an explore-deploy is enclosed in a structure having a type and data field. Pulling out just the data as json is needed to use the result in json results without type and data constructs. This example uses the bash json utilityy jq to 'detype' the output. While jq is good for many uses of json in bash using javascript might have been as easy in this case.
+```sh
+#usage: ./explore.sh URI
 uri=${1-"rho:id:ar17ohqq83kx7a16nbfquwu9gxidduk9hstgbs9gkbj63o8gqyh1ye"}
-#uri=${1-"rho:id:9hetk4yxrdqcc8h5xiy7md5co61etrgak9z8qnxa3yzwchs8p3if8b"}
-code="${3-return!(Nil)}"
 curl -s -X POST https://observer.testnet.rchain.coop/api/explore-deploy -d '
 new return,
   lookup(`rho:registry:lookup`)
@@ -21,8 +20,7 @@ in {
 `'"$uri"'`
       , *valueCh) |
     for (@value <- valueCh) {
-            if ( {'"$code"'} == Nil ) {'"$code"'}
-            else return!(value)
+      return!(value)
     }
   }
 }
@@ -45,3 +43,4 @@ def walk(f): # walk def is needed for old jq <1.5
   end;
 walk(detype)' || cat /tmp/explore.err
 exit
+```
