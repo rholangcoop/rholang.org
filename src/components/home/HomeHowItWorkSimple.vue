@@ -11,15 +11,12 @@
           </li>
           <br />
           <li>
+            <a href="https://try-rholang-22.netlify.app/">RChain Cloud</a>
+          </li>
+
+          <br />
+          <li>
             <a href="https://github.com/tgrospic/rholang-idea">Intellij Plugin</a>
-          </li>
-          <br />
-          <li>
-            <a href="https://github.com/rchain-community/rchain.cloud">RChain Cloud</a>
-          </li>
-          <br />
-          <li>
-            <a href="https://cryptofex.io/">Cryptofex IDE</a>
           </li>
         </ul>
 
@@ -91,8 +88,8 @@ export default {
     RholangLogo,
     WebpackLogo,
     GraphQlLogo,
-    Dots
-  }
+    Dots,
+  },
 };
 </script>
 

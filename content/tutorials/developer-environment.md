@@ -9,9 +9,9 @@ In order to run the rholang snippets in this tutorial, you will need some kind o
 This is the Visual Studio Code extension for the Rholang programming language. It has support for syntax highlighting and code evaluation with error highlighting.
 [Marketplace VSCode](https://marketplace.visualstudio.com/items?itemName=tgrospic.rholang)
 
-## Cryptofex IDE
+## Rchain Cloud
 
-Pyrofex is developing an up-and-coming integrated development environment called [Cryptofex](https://cryptofex.io/). Cryptofex runs natively on windows, mac, and linux/. It offers rholang syntax highlighting and is capable of evaluating rholang code internally or with a running RNode. The IDE also supports ethereum development.
+Evaluate Rholang code in the cloud and test your dapp [Rchain Cloud](https://try-rholang-22.netlify.app/).
 
 ## Local Node
 

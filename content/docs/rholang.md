@@ -17,6 +17,10 @@ Rholang is completely asynchronous, in the sense that while you can read a messa
 This is the Visual Studio Code extension for the Rholang programming language. It has support for syntax highlighting and code evaluation with error highlighting.
 [Marketplace VSCode](https://marketplace.visualstudio.com/items?itemName=tgrospic.rholang)
 
+## Rchain Cloud
+
+Evaluate Rholang code in the cloud and test your dapp [Rchain Cloud](https://try-rholang-22.netlify.app/).
+
 ## Local Node
 
 Another way to run rholang code is to start up your own local RNode and use its rholang interpreter. For that rnode has to be installed. There are two modes to run rholang code locally: repl and eval. With repl you can type rholang code directly into the console and execute it. With eval you are running a .rho file and execute this file.
@@ -70,9 +74,3 @@ the following chapter provides you with the information for setting up REPL with
 * go to cmd1 -> there you can see the evaluation result ("Hello World again" "Hello World"):
 
   ![eval](./images/eval-result.png)
-
-## Cryptofex IDE
-
-Pyrofex is developing an up-and-coming integrated development environment called [Cryptofex](https://cryptofex.io/). Cryptofex runs natively on windows, mac, and linux/. It offers rholang syntax highlighting and is capable of evaluating rholang code internally or with a running RNode. The IDE also supports ethereum development.
-
-- **Write Rholang using an IntelliJ plugin** - This [Rholang IntelliJ plugin](https://github.com/tgrospic/rholang-idea) was created by a RChain community member.

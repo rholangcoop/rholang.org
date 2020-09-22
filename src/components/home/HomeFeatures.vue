@@ -65,7 +65,9 @@
         <p>Read tutorials from the community and learn Rholang</p>
       </FeatureCard>
 
-      <FeatureCard link="https://rchain.atlassian.net/wiki/spaces/CORE/overview">
+      <FeatureCard
+        link="https://rchain.atlassian.net/wiki/spaces/CORE/overview"
+      >
         <h3>📢 Development updates</h3>
         <p>Read the latest development updates</p>
       </FeatureCard>
@@ -80,22 +82,28 @@
         <p>Keep up to date with new blog posts</p>
       </FeatureCard>
 
-      <FeatureCard link="https://www.youtube.com/channel/UCSS3jCffMiz574_q64Ukj_w">
+      <FeatureCard
+        link="https://www.youtube.com/channel/UCSS3jCffMiz574_q64Ukj_w"
+      >
         <h3>📹 Youtube Development Updates</h3>
         <p>Watch every Wednesday the development updates from Rchain</p>
       </FeatureCard>
 
-      <FeatureCard link="https://www.youtube.com/channel/UCi8byRkpJBbGgDot2pWXLHA/videos">
+      <FeatureCard
+        link="https://www.youtube.com/channel/UCi8byRkpJBbGgDot2pWXLHA/videos"
+      >
         <h3>📹 CASPER Development Research</h3>
         <p>Watch the latest research development led by Greg Meredith</p>
       </FeatureCard>
 
-      <FeatureCard link="https://rchain.atlassian.net/wiki/spaces/DOC/pages/3014657/Reading+List">
+      <FeatureCard
+        link="https://rchain.atlassian.net/wiki/spaces/DOC/pages/3014657/Reading+List"
+      >
         <h3>📔 Blockchain 101</h3>
         <p>Get into Blockchain for starters</p>
       </FeatureCard>
 
-      <FeatureCard link="http://rchain.cloud">
+      <FeatureCard link="https://try-rholang-22.netlify.app/">
         <h3>☁️ Rholang Cloud</h3>
         <p>Try to write Rholang code and compile it online</p>
       </FeatureCard>
@@ -124,23 +132,23 @@
 </template>
 
 <script>
-import VueLogo from "~/assets/images/vue-logo.svg";
-import GraphQlLogo from "~/assets/images/graphql-logo.svg";
-import FeatureCard from "@/components/FeatureCard.vue";
+import VueLogo from '~/assets/images/vue-logo.svg';
+import GraphQlLogo from '~/assets/images/graphql-logo.svg';
+import FeatureCard from '@/components/FeatureCard.vue';
 
 export default {
-  props: ["icon"],
+  props: ['icon'],
   components: {
     VueLogo,
     GraphQlLogo,
-    FeatureCard
+    FeatureCard,
   },
   computed: {
     iconClasses() {
       let classes = [];
       return classes;
-    }
-  }
+    },
+  },
 };
 </script>
 
