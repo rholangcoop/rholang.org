@@ -10,7 +10,6 @@
     "deploy": "gh-pages -b master -d dist"
   },
   "dependencies": {
-    "@gridsome/plugin-google-analytics": "^0.1.0",
     "@noxify/gridsome-plugin-remark-embed": "^1.1.5",
     "algoliasearch": "^3.32.0",
     "babel-runtime": "^6.26.0",
