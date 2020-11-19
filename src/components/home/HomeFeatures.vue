@@ -123,6 +123,11 @@
         <p>Community driven Rchain Wallet for android</p>
       </FeatureCard>
 
+      <FeatureCard link="http://app.onechain.one/appstart_en.html">
+        <h3>💼 ONE Wallet</h3>
+        <p>Community driven Rchain Wallet for android</p>
+      </FeatureCard>
+
       <FeatureCard link="http://revdefine.io/">
         <h3>📡 Rchain Blockchain Explorer</h3>
         <p>Watch the network live</p>
