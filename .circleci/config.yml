@@ -1,7 +1,5 @@
-version: 2.1
 orbs:
-  node: circleci/node@1.1.6
-jobs:
+  node: circleci/node@4.1.0
   build-and-deploy:
     executor:
       name: node/default
@@ -24,6 +22,7 @@ jobs:
             - run:
                 name: Deploy to GH
                 command: yarn deploy
+version: 2.1
 workflows:
   build-and-test:
     jobs:
