@@ -81,6 +81,25 @@ module.exports = {
       },
     },
     {
+      use: '@gridsome/vue-remark',
+      options: {
+        index: ['development-dapps'],
+        baseDir: './content/dapps',
+        pathPrefix: '/dapps',
+        typeName: 'DappsPage',
+        template: './src/templates/DappsPage.vue',
+        plugins: ['@gridsome/remark-prismjs'],
+        remark: {
+          autolinkHeadings: {
+            content: {
+              type: 'text',
+              value: '#',
+            },
+          },
+        },
+      },
+    },
+    {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'examples/*.md',

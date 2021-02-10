@@ -52,7 +52,6 @@
   @media screen and (min-width: 1000px) {
     img {
       max-width: 110%;
-      margin-left: -5%;
     }
   }
 
@@ -75,7 +74,7 @@
       background: none;
 
       &::before {
-        content: " ";
+        content: ' ';
         position: absolute;
         top: 0;
         height: 100%;
@@ -94,7 +93,7 @@
 
   h2 {
     &::before {
-      content: " ";
+      content: ' ';
       display: block;
       margin-bottom: 1.5rem;
       border-top: 1px solid var(--border-color);
