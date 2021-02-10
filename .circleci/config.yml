@@ -24,7 +24,6 @@ jobs:
             - run:
                 name: Deploy to GH
                 command: yarn deploy
-  parallelism: '1'
 
 version: 2.1
 workflows:
