@@ -3,6 +3,7 @@ orbs:
 
 jobs:
   build-and-deploy:
+  parallelism: 1
     executor:
       name: node/default
       tag: "12.16.1"
@@ -24,6 +25,7 @@ jobs:
             - run:
                 name: Deploy to GH
                 command: yarn deploy
+      
 version: 2.1
 workflows:
   build-and-test:
