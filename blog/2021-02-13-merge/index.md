@@ -14,13 +14,19 @@ With Blockchain 3.0 like Rchain, which is building on the concurrent rho-calculu
 The following slide show how blockmerge is working:
 
 ![merge1](./images/block-merge-1.png)
+
 ![merge2](./images/block-merge-2.png)
+
 This image below, shows the current state of blockmerge in testing. In this image there are 10 validator, which are receiving transaction from each other and are validating these.
 
 ![merge3](./images/block-merge-3.png)
+
 ![merge4](./images/block-merge-4.png)
+
 ![merge5](./images/block-merge-5.png)
+
 ![merge6](./images/block-merge-6.png)
+
 ![merge7](./images/block-merge-7.png)
 
 ![merge8](./images/block-merge-8.png)
