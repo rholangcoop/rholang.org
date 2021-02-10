@@ -1,5 +1,5 @@
 ---
-title: 'Rholang is availabe on Codesandbox.io 💥'
+title: 'Rholang is available on Codesandbox.io 💥'
 slug: rholang-codesandbox
 author: []
 date: 2021-02-10
