@@ -16,6 +16,7 @@ The following slide show how blockmerge is working:
 ![view](./images/block-merge-1.png)
 ![view](./images/block-merge-2.png)
 This image below, shows the current state of blockmerge in testing. In this image there are 10 validator, which are receiving transaction from each other and are validating these.
+
 ![view](./images/block-merge-3.png)
 ![view](./images/block-merge-4.png)
 ![view](./images/block-merge-5.png)
