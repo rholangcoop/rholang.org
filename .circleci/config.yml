@@ -3,10 +3,9 @@ orbs:
 
 jobs:
   build-and-deploy:
-  parallelism: 1
     executor:
       name: node/default
-      tag: "12.16.1"
+      tag: '12.16.1'
     steps:
       - checkout
       - node/with-cache:
@@ -21,11 +20,12 @@ jobs:
                   git config user.name "rholang"
             - add_ssh_keys:
                 fingerprints:
-                  - "ad:1d:24:40:b5:4b:8e:e4:4c:6b:f7:b5:6a:49:6a:ce"
+                  - 'ad:1d:24:40:b5:4b:8e:e4:4c:6b:f7:b5:6a:49:6a:ce'
             - run:
                 name: Deploy to GH
                 command: yarn deploy
-      
+  parallelism: 1
+
 version: 2.1
 workflows:
   build-and-test:
