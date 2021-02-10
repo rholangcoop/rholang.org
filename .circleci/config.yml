@@ -1,18 +1,36 @@
-version: 2.1
-orbs:
-  node: circleci/node@1.1.6
+version: 2
+
+defaults: &defaults
+  working_directory: ~/project/vue
+  docker:
+    - image: vuejs/ci
 jobs:
+  install:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-packages-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn --network-timeout 600000
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - project/vue
+
   build-and-deploy:
-    executor:
-      name: node/default
-      tag: '12.16.1'
     steps:
       - checkout
       - node/with-cache:
           steps:
-            - run:
-                name: Installation
-                command: yarn install
             - run:
                 name: Configuration
                 command: |
@@ -24,10 +42,10 @@ jobs:
             - run:
                 name: Deploy to GH
                 command: yarn deploy
-    parallelism: 1
 workflows:
   build-and-test:
     jobs:
+      - install
       - build-and-deploy:
           filters:
             branches:
