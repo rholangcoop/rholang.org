@@ -24,7 +24,7 @@ jobs:
             - run:
                 name: Deploy to GH
                 command: yarn deploy
-
+    parallelism: 1
 workflows:
   build-and-test:
     jobs:
