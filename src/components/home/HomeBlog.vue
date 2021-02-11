@@ -14,20 +14,20 @@
 </template>
 
 <script>
-import PostCard from "@/components/PostCard.vue";
-import Newsletter from "~/components/Newsletter";
+import PostCard from '@/components/PostCard.vue';
+import Newsletter from '~/components/Newsletter';
 
 export default {
   components: {
     PostCard,
-    Newsletter
-  }
+    Newsletter,
+  },
 };
 </script>
 
 <static-query>
 query {
-  posts: allBlogPost {
+  posts: allBlogPost(limit:3) {
     edges {
       node {
         id
