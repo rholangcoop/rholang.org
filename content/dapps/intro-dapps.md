@@ -37,8 +37,17 @@ The returned result will be displayed after the execution in the ui.
 ## Make your code searchable for others
 
 To let others discover your rholang code, please edit the title of your codesandbox.
+
+> ⚠️ your title of the sandbox has to beginn with: rholang-
+>
+> example title: rholang-helloworld, rholang-liquid-democracy ...
+>
+> otherwise your sandbox will not be found by codesandbox by others.
+
 ![title](./images/rho-title.png)
 
-With this your codesandbox is searchable under the tag: rholang here: [search rholang dapps](https://codesandbox.io/search?refinementList%5Btags%5D%5B0%5D=rholang&page=1&configure%5BhitsPerPage%5D=12)
+With this your codesandbox is searchable under the search query: rholang
+
+see here: [search rholang dapps](https://codesandbox.io/search?refinementList%5Btags%5D=&refinementList%5Bnpm_dependencies.dependency%5D=&page=1&configure%5BhitsPerPage%5D=12&query=rholang%20)
 
 ![search](./images/rho-search.png)
