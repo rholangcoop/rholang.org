@@ -38,10 +38,8 @@ The returned result will be displayed after the execution in the ui.
 
 To let others discover your rholang code, please edit the title of your codesandbox.
 
-> ⚠️ your title of the sandbox has to beginn with: rholang-
->
-> example title: rholang-helloworld, rholang-liquid-democracy ...
->
+> ⚠️ your title of the sandbox has to beginn with: rholang-  
+> example title: rholang-helloworld, rholang-liquid-democracy ...  
 > otherwise your sandbox will not be found by codesandbox by others.
 
 ![title](./images/rho-title.png)
