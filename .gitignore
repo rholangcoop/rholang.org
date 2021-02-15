@@ -5,6 +5,6 @@ src/.temp
 node_modules
 dist
 .cache
-
+schema.graphql
 # Local Netlify folder
 .netlify
