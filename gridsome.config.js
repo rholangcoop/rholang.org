@@ -119,6 +119,7 @@ module.exports = {
         },
         remark: {
           plugins: [
+            'remark-attr',
             '@gridsome/remark-prismjs',
             [
               '@noxify/gridsome-plugin-remark-embed',
@@ -130,5 +131,5 @@ module.exports = {
         },
       },
     },
-  ],
+  ]
 };

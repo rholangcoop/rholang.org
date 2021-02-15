@@ -9,9 +9,9 @@
       <div class="post-content post mb-x2">
         <g-image v-if="$page.post.poster" quality="1" width="600" :src="$page.post.poster" />
 
-        <p class="lead" v-html="$page.post.excerpt" />
+        <!--<p class="lead" v-html="$page.post.excerpt" />-->
 
-        <div v-html="$page.post.content" />
+        <div style="text-align:justify" v-html="$page.post.content" />
       </div>
     </Section>
   </Layout>
@@ -30,6 +30,7 @@ query ($id: ID!) {
       avatar (width: 60)
     }
     excerpt
+    cover
   }
 }
 </page-query>
@@ -49,6 +50,10 @@ export default {
         {
           name: "description",
           content: this.$page.post.excerpt
+        },
+        {
+          property: 'og:image',
+          content:  this.$page.post.cover.src || ''
         }
       ]
     };
