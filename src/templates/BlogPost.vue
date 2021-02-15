@@ -30,6 +30,7 @@ query ($id: ID!) {
       avatar (width: 60)
     }
     excerpt
+    cover
   }
 }
 </page-query>
@@ -49,6 +50,10 @@ export default {
         {
           name: "description",
           content: this.$page.post.excerpt
+        },
+        {
+          property: 'og:image',
+          content:  this.$page.post.cover.src || ''
         }
       ]
     };

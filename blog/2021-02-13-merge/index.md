@@ -5,6 +5,7 @@ author: [nzpr]
 date: 2021-02-13
 tags: ['block-merge', 'dag', 'blockchain scaling']
 excerpt: 'Horizontal scaling with RChain.'
+cover: './images/cover.png'
 ---
 ![merge1](./images/merge-1.jpg){ width=650 }
 
