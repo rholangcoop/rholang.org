@@ -6,15 +6,19 @@ This is the repository of the website [https://rholang.github.io/](https://rhola
 
 - Linux OS / Windows / Mac
 - min. 8 GB RAM
+<<<<<<< HEAD
 - Node 14
+=======
+- Node 12
+>>>>>>> 68c56f334d003c2e826bbaab9fbf5a3c4d9c0e9e
 - install globally
-  - yarn
+  - npm
 
 # Quick install
 
 - fork this repository and open with vscode (cd into /rholang.github.io/)
-- \$ yarn install
-- \$ yarn develop
+- \$ npm install
+- \$ npm run develop
   - website is locally available
 
 # Deploy
@@ -22,13 +26,17 @@ This is the repository of the website [https://rholang.github.io/](https://rhola
 - Deploy to Github (gh-pages)
 
   - your github repository needs two branches: source and master
-  - \$ yarn deploy
+  - \$ npm run deploy
 
 ## Folder structure
 
 - /content
   - all markdown files belong here
+<<<<<<< HEAD
   - ! image size not larger than 2 MB, otherwise there will be errors during build
+=======
+  - ! image size not larger than 2 MB
+>>>>>>> 68c56f334d003c2e826bbaab9fbf5a3c4d9c0e9e
 - /src/data
   - yaml files for indexing markdown files
 
