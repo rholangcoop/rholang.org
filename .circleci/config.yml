@@ -1,11 +1,11 @@
 version: 2.1
 orbs:
-  node: circleci/node@1.1.6
+  node: circleci/node@4.1.0
 jobs:
   build-and-deploy:
     executor:
       name: node/default
-      tag: '12.16.1'
+      tag: '14'
     steps:
       - checkout
       - node/with-cache:
@@ -23,7 +23,7 @@ jobs:
                   - 'ad:1d:24:40:b5:4b:8e:e4:4c:6b:f7:b5:6a:49:6a:ce'
             - run:
                 name: Deploy to GH
-                command: npm run deploy
+                command: yarn deploy
 workflows:
   build-and-test:
     jobs:
