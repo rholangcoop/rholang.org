@@ -8,13 +8,13 @@ This is the repository of the website [https://rholang.github.io/](https://rhola
 - min. 8 GB RAM
 - Node 14
 - install globally
-  - npm
+  - yarn
 
 # Quick install
 
 - fork this repository and open with vscode (cd into /rholang.github.io/)
-- \$ npm install
-- \$ npm run develop
+- \$ yarn install
+- \$ yarn develop
   - website is locally available
 
 # Deploy
@@ -22,7 +22,7 @@ This is the repository of the website [https://rholang.github.io/](https://rhola
 - Deploy to Github (gh-pages)
 
   - your github repository needs two branches: source and master
-  - \$ npm run deploy
+  - \$ yarn deploy
 
 ## Folder structure
 
