@@ -1,72 +1,72 @@
-const path = require("path");
-const fs = require("fs-extra");
-const execa = require("execa");
-const yaml = require("js-yaml");
-const Prism = require("prismjs");
+const path = require('path');
+const fs = require('fs-extra');
+const execa = require('execa');
+const yaml = require('js-yaml');
+const Prism = require('prismjs');
 
 // highlight page-query and static-query in html
 Prism.languages.html.graphql = {
   pattern: /(<(page|static)-query[\s\S]*?>)[\s\S]*?(?=<\/(page|static)-query>)/i,
   inside: Prism.languages.graphql,
   lookbehind: true,
-  greedy: true
+  greedy: true,
 };
 
 module.exports = function(api) {
   api.loadSource(async ({ addMetadata, addCollection }) => {
-    let gridsomeVersion = "";
+    let gridsomeVersion = '';
 
     try {
       //const { stdout } = await execa('npm', ['show', 'gridsome', 'version'])
-      gridsomeVersion = "0.1.0";
+      gridsomeVersion = '0.1.0';
     } catch (err) {
-      console.warn("Failed to get gridsome version from npm.");
+      console.warn('Failed to get gridsome version from npm.');
     }
 
-    addMetadata("gridsomeVersion", gridsomeVersion);
+    addMetadata('gridsomeVersion', gridsomeVersion);
 
     // contributors
-    const authorsPath = path.join(__dirname, "contributors/contributors.yaml");
-    const authorsRaw = await fs.readFile(authorsPath, "utf8");
+    const authorsPath = path.join(__dirname, 'contributors/contributors.yaml');
+    const authorsRaw = await fs.readFile(authorsPath, 'utf8');
     const authorsJson = yaml.safeLoad(authorsRaw);
-    const authors = addCollection("Contributor");
+    const authors = addCollection('Contributor');
 
     authorsJson.forEach(({ id, name: title, ...fields }) => {
       authors.addNode({
         id,
         title,
         internal: {
-          origin: authorsPath
+          origin: authorsPath,
         },
-        ...fields
+        ...fields,
       });
     });
 
     // Starters
-    const startersPath = path.join(__dirname, "starters/starters.yaml");
-    const startersRaw = await fs.readFile(startersPath, "utf8");
+    const startersPath = path.join(__dirname, 'starters/starters.yaml');
+    const startersRaw = await fs.readFile(startersPath, 'utf8');
     const startersJson = yaml.safeLoad(startersRaw);
-    const starters = addCollection("Starter");
+    const starters = addCollection('Starter');
 
     // Connect author field to Contributors & Platforms
-    starters.addReference("author", "Contributor");
-    starters.addReference("platforms", "Platform");
+    starters.addReference('author', 'Contributor');
+    starters.addReference('platforms', 'Platform');
 
     startersJson.forEach((starter, index) => {
       starters.addNode({
         ...starter,
         index,
         internal: {
-          origin: startersPath
-        }
+          origin: startersPath,
+        },
       });
     });
 
     // Platforms
-    const platformsPath = path.join(__dirname, "platforms/platforms.yaml");
-    const platformsRaw = await fs.readFile(platformsPath, "utf8");
+    const platformsPath = path.join(__dirname, 'platforms/platforms.yaml');
+    const platformsRaw = await fs.readFile(platformsPath, 'utf8');
     const platformsJson = yaml.safeLoad(platformsRaw);
-    const platforms = addCollection("Platform");
+    const platforms = addCollection('Platform');
 
     // Connect author field to Contributors
     platformsJson.forEach((platform, index) => {
@@ -74,16 +74,16 @@ module.exports = function(api) {
         ...platform,
         index,
         internal: {
-          origin: platformsPath
-        }
+          origin: platformsPath,
+        },
       });
     });
   });
 
   api.createPages(({ createPage }) => {
     createPage({
-      path: "/plugins/:id*",
-      component: "./src/templates/Plugin.vue"
+      path: '/plugins/:id*',
+      component: './src/templates/Plugin.vue',
     });
   });
 };

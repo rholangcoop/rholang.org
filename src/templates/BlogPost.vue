@@ -7,7 +7,12 @@
       </div>
 
       <div class="post-content post mb-x2">
-        <g-image v-if="$page.post.poster" quality="1" width="600" :src="$page.post.poster" />
+        <g-image
+          v-if="$page.post.poster"
+          quality="1"
+          width="600"
+          :src="$page.post.poster"
+        />
 
         <!--<p class="lead" v-html="$page.post.excerpt" />-->
 
@@ -36,27 +41,49 @@ query ($id: ID!) {
 </page-query>
 
 <script>
-import PostMeta from "@/components/PostMeta.vue";
-import Newsletter from "@/components/Newsletter.vue";
+import PostMeta from '@/components/PostMeta.vue';
+import Newsletter from '@/components/Newsletter.vue';
 export default {
   components: {
     PostMeta,
-    Newsletter
+    Newsletter,
+  },
+  computed: {
+    getCoverImage() {
+      let path = '';
+      const cover = this.$page.post.cover;
+      this.test = 'test';
+      if (cover != null && typeof cover != 'string') {
+        // cover is a path?
+        path = `${this.getBaseUrl}${this.$page.post.cover.src}`;
+      } else if (cover != null && cover.includes('http')) {
+        // cover is a link
+        path = cover;
+      } else {
+        // cover isn't defined
+        path = `${this.getBaseUrl}/writing/sra.jpg?${cover}`;
+      }
+      console.log(cover);
+      return path;
+    },
+    getBaseUrl() {
+      return 'https://rholang.github.io';
+    },
   },
   metaInfo() {
     return {
       title: this.$page.post.title,
       meta: [
         {
-          name: "description",
-          content: this.$page.post.excerpt
+          name: 'description',
+          content: this.$page.post.excerpt,
         },
         {
           property: 'og:image',
-          content:  this.$page.post.cover.src || ''
-        }
-      ]
+          content: this.getCoverImage,
+        },
+      ],
     };
-  }
+  },
 };
 </script>
