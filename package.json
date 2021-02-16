@@ -6,7 +6,7 @@
     "develop": "gridsome develop",
     "explore": "gridsome explore",
     "build": "gridsome build",
-    "predeploy": "npm run build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -b master -d dist"
   },
   "dependencies": {
