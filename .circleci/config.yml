@@ -7,9 +7,8 @@ jobs:
       - image: 'cimg/base:stable'
     steps:
       - checkout
-      - run:
-          name: Installation
-          command: yarn
+      - node/install:
+          install-yarn: true
       - run:
           name: Configuration
           command: |
