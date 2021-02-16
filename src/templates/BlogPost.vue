@@ -10,7 +10,6 @@
         <g-image
           v-if="$page.post.poster"
           quality="1"
-          width="600"
           :src="$page.post.poster"
         />
 

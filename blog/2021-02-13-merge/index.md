@@ -8,10 +8,10 @@ excerpt: 'Horizontal scaling with RChain.'
 cover: './images/cover.png'
 ---
 
-![merge1](./images/merge-1.png){ width=650 }
-
 This article aims to explain how RChain can reach horizontal scalability, targeting one of the key ingredients of RChain platform - block merge.
 Some preliminary results of implementation analysis are included in the end.
+
+![merge1](./images/merge-1.png)
 
 Blockchain is effectively a computer, replicated across a number of nodes.
 Two basic offerings are cryptographic proof of state transition + economic incentive for making sure one cheating is going to be punished.
@@ -27,7 +27,7 @@ In case of PoS networks, once some state change is introduced, it should be veri
 
 This is the basic principle of most chains.
 
-![merge2](./images/merge-2.png){ width=650 }
+![merge2](./images/merge-2.png)
 
 **_<div style="font-size:larger; text-align:center">But what if some miners of the network make two state transitions at the same time?</div>_**
 
@@ -36,7 +36,7 @@ This is the basic principle of most chains.
 As it can be seen, this basic principle of a blockchain assumes that all state transitions happen one by one, and verified one by one. This leads to seeking scaling opportunities in running parallel chains or making some computations off chain and committing the result of a batch at once.
 Why is this, one might ask? Why not have a nice graph, or hypergraph, or hypergraph of hypergraphs? And include all state transitions that have been done by all validators, eliminating orphans at all?
 
-![merge3](./images/merge-3.png){ width=650 }
+![merge3](./images/merge-3.png)
 
 Here's the problem - when some miner creates a new state transition (new block), it has to use some state as a base to work with, some state that has been already proven by the network to be valid. (e.g. one that says that the author of the article owns all BTCs). And if you have not a chain, but DAG (directed acyclic graph), you have several possible base states to work with. Let us have 4 validators proposed 4 blocks with the following transactions:
 
@@ -52,13 +52,13 @@ Here the question arises - how miner A can be sure that tx1 tx2 tx3 and tx4 do n
 
 All computations in Rholang are expressed as sends and receives on some channel, as it is a process calculi language. So, roughly speaking, all that is stored - is data pieces that are available on a channel, and continuations that are available on a channel (this is basically code that waits to be executed once data comes in). If at some point data and continuation match - comm event happens, which is a basic compute event. All this beauty is stored in a RSpace - a flavour of [Gelernter’s tuple space](https://en.wikipedia.org/wiki/Tuple_space), which is a storage unit. As a side note, the outcome of this storage model is that RChain offers **_<span style="font-size:larger">transactional data storage</span>_**.
 
-![merge4](./images/merge-4.png){ width=650 }
+![merge4](./images/merge-4.png)
 
 There is one basic constraint on a RSpace - if one looks at it, there should not be any possible comm events at any time. When some state transition happens, if any comm occurs - all continuations are invoked till the point when RSpace does not have any more potential comm's left. That's why, if miner A sees `tx1`, `tx2`, `tx3` and `tx4`, the logic of conflict detection simply boils down to checking if changes produced by these transactions, added to RSpace, lead to potential comm events. If no - changes made by these tx’s can be put into RSpace without any code execution. And, which is important - this conflict resolution is built-in on a computational model level. So it is available for all user code ever going to be written, and - with mathematical proof of correctness.
 
-![merge5](./images/merge-5.png){ width=650 }
+![merge5](./images/merge-5.png)
 
-![merge6](./images/merge-6.png){ width=650 }
+![merge6](./images/merge-6.png)
 
 **_<div style="font-size:larger; text-align:center">Now, having this knowledge, let's talk about how this brings scalability.</div>_**
 General understanding in blockchain space is that if you add more nodes to the network - you inevitably lower down the throughput, decentralization is not free.
@@ -71,10 +71,10 @@ Conflict detection can be done with several degrees of efficiency, trading numbe
 And, the last part is the merging of state changes. This operation requires data that is inside quite a narrow scope till the last finalized block, which allows aggressive caching. But even without it, it's just reading from and writing to the database.
 
 To sum up everything being said, this article briefly explained what is `block merge` and how it is related to scalability.
-As said in the beginning of the article, some preliminary results can be found in this gist https://gist.github.com/nzpr/2465db5210c817324ab7ab4f01e23f38.
+As said in the beginning of the article, some preliminary results can be found in this [gist](https://gist.github.com/nzpr/2465db5210c817324ab7ab4f01e23f38).
 The DAG below is being built, with synchrony constraint set to upper bound, so validator have to wait for all others before creating block.
 
-![merge7](./images/merge-7.png){ width=650 }
+![merge7](./images/merge-7.png)
 
 The expected result which should demonstrate linear scalability is that merging time is a linear function of number of nodes and number of blocks created by the network grows linearly with increasing number of nodes.
 
