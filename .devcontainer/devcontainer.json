@@ -1,0 +1,16 @@
+{
+    "name": "Node.js & Python 2 Dev Container",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "."
+    },
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-vscode.node-debug2",
+        "ms-python.python",
+        "dbaeumer.vscode-eslint"
+    ],
+    "remoteUser": "root"
+}
