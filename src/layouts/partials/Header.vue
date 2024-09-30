@@ -84,7 +84,7 @@
             >Rui锐 Chrome Wallet</a>
 
             <a
-              href="https://github.com/rholang/rholang.github.io"
+              href="https://github.com/rholangcoop/rholang.org"
               rel="noopener noreferrer"
               target="_blank"
             >Rholang Website</a>
