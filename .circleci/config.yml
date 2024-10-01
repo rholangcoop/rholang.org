@@ -22,8 +22,8 @@ jobs:
                 fingerprints:
                   - 'ad:1d:24:40:b5:4b:8e:e4:4c:6b:f7:b5:6a:49:6a:ce'
             - run:
-              name: clear Github Pages cache
-              command: rm -rf node_modules/gh-pages/.cache
+                name: Clear Github Pages cache
+                command: rm -rf node_modules/gh-pages/.cache
             - run:
                 name: Deploy to GH
                 command: yarn deploy
