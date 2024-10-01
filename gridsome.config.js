@@ -3,7 +3,7 @@ const nodeExternals = require('webpack-node-externals');
 module.exports = {
   siteName: 'Rholang',
   siteUrl: `siteUrl: 'https://<your-github-username>.github.io`,
-  titleTemplate: '%s - Rholang',
+  titleTemplate: '%s - Rholang Programming language',
   siteDescription:
     '🚀 Rholang - A language for distributed computing and blockchain 4.0',
 
