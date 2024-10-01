@@ -1,4 +1,4 @@
-# Rholang.org 🥳
+# Rholang 🥳
 
 This is the repository of the website [https://rholang.org/](https://rholang.org/).
 
