@@ -47,7 +47,7 @@ export default {
   },
 
   metaInfo: {
-    title: "Concurrent programming language for smart contracts"
+    title: ""
   }
 };
 </script>
